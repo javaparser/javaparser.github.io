@@ -4,6 +4,8 @@ This is the source for the JavaParser.org website.
 
 It uses a combination of static HTML pages and the Jekyll publishing engine.
 
+The original website template is available on the TEMPLATE branch
+
 # Setup 
 
 If you wish to edit the static html pages you can clone the repository edit and push the changes as usual. 

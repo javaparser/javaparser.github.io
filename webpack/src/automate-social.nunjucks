@@ -1,0 +1,33 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% set section = { class: "main-nav fixed-top" } %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/automate-social.nunjucks" %}
+
+{% include "~sections/automate-social/card-projects.nunjucks" %}
+{% include "~sections/automate-social/get-started.nunjucks" %}
+{% include "~sections/automate-social/why.nunjucks" %}
+{% include "~sections/automate-social/automation-tasks.nunjucks" %}
+{% include "~sections/automate-social/wave-features.nunjucks" %}
+{% include "~sections/automate-social/counters.nunjucks" %}
+{% include "~sections/automate-social/spiral.nunjucks" %}
+
+{% set section = { title: "Part of our happy customers", class: "bg-light" } %}
+{% include "~sections/shared/brands-using.nunjucks" %}
+
+{% include "~sections/automate-social/testimonials.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left b-b", container: { class: "pt-5" } } %}
+{% include "~blocks/cta/1.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { container: { class: "pb-3" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

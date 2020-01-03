@@ -1,0 +1,22 @@
+<!-- ./Footer - Simple -->
+<footer class="site-footer section {{ demo.class }}">
+    <div class="container {{ demo.container.class }}">
+        <div class="row align-items-center">
+            <div class="col-md-5 text-center text-md-left">
+                <nav class="nav justify-content-center justify-content-md-start">
+                    <a class="nav-item nav-link" href="{{ baseUrl.pages }}about.html">About</a>
+                    <a class="nav-item nav-link" href="#">Services</a>
+                    <a class="nav-item nav-link" href="{{ baseUrl.blog }}blog-grid.html">Blog</a>
+                </nav>
+            </div>
+
+            <div class="col-md-2 text-center">
+                <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo.png" alt="" class="logo">
+            </div>
+
+            <div class="col-md-5 text-center text-md-right">
+                <p class="mt-2 mb-0 text-secondary small">© 2018 5studios. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>

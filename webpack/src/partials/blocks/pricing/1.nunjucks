@@ -1,0 +1,96 @@
+<!-- ./Pricing Table - Simple Columns -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row">
+            {% set plans = [{
+                icon : "box",
+                plan: {
+                    name: "Personal",
+                    price: 0.99,
+                    description: "Includes simple but powerful functionality for individuals and small teams. You can upgrade on the way"
+                },
+                features: [{
+                    name: "Cras justo odio",
+                    class: "strike-through"
+                }, {
+                    name: "Dapibus ac facilisis in",
+                    class: "strike-through"
+                }, {
+                    name: "Morbi leo risus",
+                    class: "strike-through"
+                }, {
+                    name: "Porta ac consectetur ac"
+                }, {
+                    name: "Vestibulum at eros"
+                }]
+            }, {
+                icon : "download-cloud",
+                best: true,
+                plan: {
+                    name: "Business",
+                    price: 29.99,
+                    description: "For settle companies looking to stay competitive in the market and growing with the technology"
+                },
+                features: [{
+                    name: "Cras justo odio",
+                    class: "strike-through"
+                }, {
+                    name: "Dapibus ac facilisis in",
+                    class: "strike-through"
+                }, {
+                    name: "Morbi leo risus"
+                }, {
+                    name: "Porta ac consectetur ac"
+                }, {
+                    name: "Vestibulum at eros"
+                }]
+            }, {
+                icon : "settings",
+                plan: {
+                    name: "Enterprise",
+                    price: 99.99,
+                    description: "Everything you can get from a professional solution to keep your business on its way to success"
+                },
+                features: [{
+                    name: "Cras justo odio"
+                    }, {
+                    name: "Dapibus ac facilisis in"
+                    }, {
+                    name: "Morbi leo risus"
+                    }, {
+                    name: "Porta ac consectetur ac"
+                    }, {
+                    name: "Vestibulum at eros"
+                }]
+            }] %}
+
+            {% for plan in plans %}
+            <div class="col-md-4 mt-5">
+                <div class="card text-center">
+                    <div
+                        class="pricing card-header {{ 'bg-primary-gradient text-contrast' if plan.best else 'bg-light-gradient' }} d-flex align-items-center flex-column">
+                        <h4 class="{{ 'text-contrast' if plan.best }}">{{ plan.plan.name }}</h4>
+
+                        <div class="pricing-value"><span class="price bold">{{ plan.plan.price }}</span></div>
+
+                        <p>{{ plan.plan.description }}</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        {% for feature in plan.features %}
+                        <li class="list-group-item {{ feature.class }}">{{ feature.name }}</li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="javascript:;"
+                            class="btn {{ 'btn-primary' if plan.best else 'btn-outline-secondary' }}">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

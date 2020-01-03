@@ -1,0 +1,58 @@
+<!-- ./Support Form -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="device iphone-x">
+                    <div class="screen">
+                        <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/screens/app/1.png" class="img-responsive"
+                            alt="">
+                    </div>
+                    <div class="notch"></div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="section-heading">
+                    <h2>Awesome <span class="bold">Support</span></h2>
+                    <p class="lead text-uppercase">Enjoy with no worries</p>
+                </div>
+
+                <p>DashCore is fully supported, if you have recently experienced an issue, Hey! stay calm, we got you
+                    cover with our awesome support system.</p>
+                <p>Please contact our support team or write directly to our support email account</p>
+                <ul class="list-unstyled list-icon">
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <p>(123) 456-7890</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <p><a href="mailto:youremail@domain.com">youremail@domain.com</a></p>
+                    </li>
+                </ul>
+
+                <form action="srv/support.php" method="post" class="form form-contact" name="support-form"
+                    novalidate="novalidate">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input type="text" name="Support[fullName]" id="support_full_name" class="form-control"
+                                placeholder="Full name" required="" aria-required="true">
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input type="email" name="Support[email]" id="support_email" class="form-control"
+                                placeholder="Email" required="" aria-required="true">
+                        </div>
+                        <div class="col-sm-12 form-group">
+                            <input type="text" name="Support[message]" id="support_message" class="form-control"
+                                placeholder="How can we help?" required="" aria-required="true">
+                        </div>
+                    </div>
+
+                    <button data-loading-text="Sending..." type="submit" class="btn btn-rounded btn-primary">Submit
+                        request</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

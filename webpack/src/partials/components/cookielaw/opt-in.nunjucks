@@ -1,0 +1,11 @@
+<!-- ./CookieLaw - Opt-in -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Opt-In</h2>
+            <p class="lead">An opt-in notice ask users for permission to use cookies. Unless they say so, no cookies will be used. A small tab allows them to change their mind later.</p>
+        </div>
+
+        <ul class="example-selector example-selector-opt-in"></ul>
+    </div>
+</section>

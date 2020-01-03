@@ -1,0 +1,37 @@
+{% set steps = [
+{ title: "Step 1", description: "This is step description", icon: "fa-lock"},
+{ title: "Step 2", description: "This is step description", icon: "fa-user"},
+{ title: "Step 3", description: "This is step description", icon: "fa-credit-card"},
+{ title: "Step 4", description: "This is step description", icon: "fa-check-square"}
+] %}
+<!-- ./Wizard - Basic example -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Basic example</h2>
+            <p class="lead">This example shows you how to simple initialize the wizard.</p>
+        </div>
+
+        <div id="basic-wizard" class="wizard">
+            <ul class="mb-5 justify-content-center">
+                {% for step in steps %}
+                <li>
+                    <a href="#bw-step-{{ loop.index }}">
+                        <i class="fas {{ step.icon }} mb-2"></i>
+                        <p class="bold my-0">{{ step.title }}</p>
+                        <span class="small text-secondary">{{ step.description }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <div class="mb-5">
+                {% for step in steps %}
+                <div id="bw-step-{{ loop.index }}">
+                    {% include "~components/wizard/cards/" + loop.index + ".nunjucks" %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

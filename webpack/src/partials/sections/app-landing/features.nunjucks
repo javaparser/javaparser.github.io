@@ -1,0 +1,25 @@
+<!-- Features -->
+{% set features = [
+    { icon: "pen-tool", title: "themes made easy",  description: "Our astonishing style structure makes your customization process a breeze" },
+    { icon: "zap",      title: "powerful design",   description: "With ready-to-use content you'll deploy your implementation in no time" },
+    { icon: "star",     title: "creative content",  description: "Repetitive styles all across the web? Nevermind that! Shine with unique styles" }
+] %}
+<section class="section mt-6n" id="features">
+    <div class="container pt-0">
+        <div class="bg-contrast shadow rounded p-5">
+            <div class="row gap-y">
+                {% for feature in features %}
+                <div class="col-md-4">
+                    <div class="rounded gradient gradient-primary-light icon-xl shadow center-flex mr-3">
+                        <i data-feather="{{ feature.icon }}" width="36" height="36" class="stroke-contrast"></i>
+                    </div>
+                    <h4 class="semi-bold mt-4 text-capitalize">{{ feature.title }}</h4>
+
+                    <hr class="w-25 bw-2 border-alternate mt-3 mb-4">
+                    <p class="regular text-muted">{{ feature.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

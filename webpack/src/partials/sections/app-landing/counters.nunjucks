@@ -1,0 +1,26 @@
+<!-- ./Counters -->
+<section class="section counters gradient gradient-primary-dark text-contrast shadow-lg">
+    <div class="container{{ (" " + section.container.class) if section.container.class.length }}">
+        <div class="section-heading text-center">
+            <h2 class="text-contrast">Millions business rely on DashCore</h2>
+            <p>These amazing stats can be wrong, many happy customers around the world trust our service to boost their
+                products</p>
+        </div>
+
+        <div class="row">
+            {% set counters = [
+            { icon : "box", value: 273, title: "Components" },
+            { icon : "download-cloud", value: 654, title: "Downloads" },
+            { icon : "anchor", value: 7941, title: "Followers" },
+            { icon : "award", value: 654, title: "New users" }
+            ] %}
+            {% for c in counters %}
+            <div class="col-xs-4 col-md-3 text-center">
+                <i data-feather="{{ c.icon }}" width="36" height="36"></i>
+                <p class="counter bold font-md mt-0">{{ c.value }}</p>
+                <p class="m-0">{{ c.title }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

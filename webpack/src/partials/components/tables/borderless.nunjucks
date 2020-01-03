@@ -1,0 +1,11 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Borderless table</h2>
+            <p class="lead">Add <code>.table-borderless</code> for a table without borders.</p>
+        </div>
+
+        {% set table = { class: "table-borderless" } %}
+        {% include "~components/tables/_table.nunjucks" %}
+    </div>
+</section>

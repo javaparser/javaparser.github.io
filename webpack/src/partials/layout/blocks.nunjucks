@@ -1,0 +1,17 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% block navigation %}
+    {% include "~demo/layout/navigation.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+    {% include "~demo/layout/page.nunjucks" %}
+
+    <div class="container-fluid py-3 demo-blocks">
+    {% block main %} {% endblock %}
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {% include "~demo/layout/footer/blocks.nunjucks" %}
+{% endblock %}

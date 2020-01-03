@@ -1,0 +1,15 @@
+<!-- ./Newsletter Form -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row">
+            <div class="col-md-6 b-md-r">
+                <h2>DashCore official <span class="bold">Newsletter</span></h2>
+            </div>
+
+            <div class="col-md-5 ml-md-auto">
+                {% set vars = { button: { class: "btn-info" } } %}
+                {% include "~sections/form/register.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

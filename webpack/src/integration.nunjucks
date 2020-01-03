@@ -1,0 +1,34 @@
+{% set main = { class: "overflow-hidden" } %}
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% set nav = { class: "dark-link", useOnlyDarkLogo: true } %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/integration.nunjucks" %}
+
+{% include "~sections/integration/how-it-works.nunjucks" %}
+{% include "~sections/integration/built-tech.nunjucks" %}
+{% include "~sections/integration/extend-core.nunjucks" %}
+{% include "~sections/integration/latest-projects.nunjucks" %}
+
+{% include "~sections/integration/register.nunjucks" %}
+{% include "~sections/integration/why-choose-us.nunjucks" %}
+
+{% set section = { class: "bg-light edge top-left", container: { class: "bring-to-front" } } %}
+{% include "~sections/shared/brands-using.nunjucks" %}
+
+{% include "~sections/integration/testimonials.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left", container: { class: "pt-5" } } %}
+{% include "~blocks/cta/1.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { class: "block bg-contrast", container: { class: "py-4" } } %}
+{% include "~blocks/footers/simple-3cols.nunjucks" %}
+{% endblock %}

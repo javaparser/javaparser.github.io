@@ -1,0 +1,19 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Screenshots',
+subtitle : "Because a picture is worth a thousand words, we help you give a visual representation of your product",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/screenshots/1.nunjucks" %}
+{% include "~blocks/screenshots/2.nunjucks" %}
+{% include "~blocks/screenshots/3.nunjucks" %}
+{% include "~blocks/screenshots/4.nunjucks" %}
+{% include "~blocks/screenshots/5.nunjucks" %}
+{% endblock %}

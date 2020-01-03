@@ -1,0 +1,10 @@
+{% extends "~blocks/navbar/_shell.nunjucks" %}
+
+{% block navbar %}
+    <ul class="nav navbar-nav mr-auto">
+        <li class="nav-item"><a class="nav-link" href="javascript:;">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:;">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:;">Download</a></li>
+        <li class="nav-item"><a class="nav-link" href="javascript:;">Blog</a></li>
+    </ul>
+{% endblock %}

@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="row no-gutters">
+        <div class="col-auto">
+            <img class="img-responsive" src="https://picsum.photos/350/200/?random&gravity={{p.gravity}}" alt="">
+        </div>
+        <div class="col">
+            <div class="card-block px-2">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Description</p>
+                <a href="#" class="btn btn-primary">BUTTON</a>
+            </div>
+        </div>
+    </div>
+</div>

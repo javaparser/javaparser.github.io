@@ -1,0 +1,30 @@
+<section class="section mt-6n">
+    <div class="container pt-0">
+        <div class="shadow bg-contrast p-4 rounded">
+            <div class="row gap-y text-center">
+                {% set blocks = [
+                    { title: "Boostrap 4", description: "Powered with one of the most popular front-end CSS toolkits.", icon: "bootstrap", class: "bg-primary shadow-3" },
+                    { title: "Webpack", description: "Module Bundler for modern JavaScript applications.", icon: "webpack", class: "gradient gradient-blue-purple shadow-4" },
+                    { title: "jQuery", description: "Flat HTML+jQuery old-fashion variations.", icon: "jquery", class: "bg-info shadow-4" }
+                ] %}
+                {% for block in blocks %}
+                <div class="col-12 col-md-4 py-4 px-5 d-flex flex-column {{ "b-r" if loop.index != 3 }}">
+                    <div class="icon-shape mb-4">
+                        <img src="./public/img/shps/bullets/{{ loop.index }}.svg" class="shape shape-xxl icon-xxl"
+                            alt="">
+
+                        <div
+                            class="rounded-circle {{ block.class }} p-3 d-flex align-items-center justify-content-center shadow icon-xl center-xy">
+                            <img src="./public/img/demo/logo/{{ block.icon }}.svg" class="img-responsive" alt="">
+                        </div>
+                    </div>
+
+                    <h4 class="text-darker bold mt-3">{{ block.title }}</h4>
+
+                    <p class="mt-4">{{ block.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

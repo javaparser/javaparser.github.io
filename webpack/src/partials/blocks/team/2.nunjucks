@@ -1,0 +1,26 @@
+<!-- ./Team -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row gap-y">
+            {% for member in team %}
+            {% if member.onStatic %}
+            <div class="col-md-6 col-lg-3 d-flex flex-column align-items-center">
+                <a href="javascript:;"><img
+                        src="{{ baseUrl.path }}public/{{ baseUrl.img }}/avatar/team/{{ loop.index }}.jpg"
+                        class="img-responsive mb-3 rounded" alt="..."></a>
+                <h6 class="bold font-l">{{ member.name }}</h6>
+                <p class="small mt-0 text-primary text-uppercase">{{ member.position }}</p>
+
+                <nav class="nav">
+                    {% for net in member.social %}
+                    <a href="javascript:;" class="nav-item nav-link pb-0">
+                        <i class="fab fa-{{ net }} text-secondary"></i>
+                    </a>
+                    {% endfor %}
+                </nav>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

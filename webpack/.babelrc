@@ -1,0 +1,22 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions", "safari >= 7"]
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "prismjs",
+      {
+        "languages": ["javascript", "scss", "markup"],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ]
+}

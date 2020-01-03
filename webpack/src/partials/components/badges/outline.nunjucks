@@ -1,0 +1,17 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Outline badges</h2>
+            <p class="lead">In need of a badge, but not the hefty background colors they bring? Replace the default
+                modifier classes with the <code>.badge-outline-*</code> ones to remove all background images and colors
+                on any badge.</p>
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Bootstrap default</p>
+        <div class="d-flex flex-wrap justify-content-around">
+            {% for badge in badges.bootstrap -%}
+            <span class="badge badge-outline-{{ badge }}">{{ badge | capitalize }}</span>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

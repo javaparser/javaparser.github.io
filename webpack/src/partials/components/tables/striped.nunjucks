@@ -1,0 +1,11 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Striped rows</h2>
+            <p class="lead">Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>tbody</code>.</p>
+        </div>
+
+        {% set table = { class: "table-striped" } %}
+        {% include "~components/tables/_table.nunjucks" %}
+    </div>
+</section>

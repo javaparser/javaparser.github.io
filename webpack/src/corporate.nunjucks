@@ -1,0 +1,27 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/corporate.nunjucks" %}
+{% include "~sections/shared/integration-icons.nunjucks" %}
+{% include "~sections/shared/3col-icons.nunjucks" %}
+{% include "~sections/shared/how-it-works.nunjucks" %}
+{% include "~sections/shared/singl-testimonial+text-left.nunjucks" %}
+{% include "~sections/shared/do-business.nunjucks" %}
+{% include "~sections/shared/big-screen+text-right.nunjucks" %}
+{% include "~sections/shared/big-screen+text-left.nunjucks" %}
+{% include "~sections/shared/singl-testimonial+text-right.nunjucks" %}
+{% include "~sections/shared/faqs.nunjucks" %}
+{% include "~sections/shared/register.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { class: "block bg-contrast", container: { class: "py-4" } } %}
+{% include "~blocks/footers/stay-in-touch.nunjucks" %}
+{% include "~blocks/footers/simple-3cols.nunjucks" %}
+{% endblock %}

@@ -1,0 +1,21 @@
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 b-r">
+                <div class="row gap-y">
+                    {% include "~blog/list/_cards-list.nunjucks" %}
+
+                    <nav class="nav justify-content-center mt-5">
+                        <a class="btn btn-contrast btn-rounded mr-5" href="#"><i class="fas fa-angle-left"></i>
+                            Previous</a>
+                        <a class="btn btn-contrast btn-rounded" href="#">Next <i class="fas fa-angle-right"></i></a>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                {% include "~blog/post/_sidebar.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

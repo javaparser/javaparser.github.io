@@ -1,0 +1,28 @@
+<!-- ./Footer - Stay in Touch -->
+<footer class="site-footer section text-center {{ demo.class }}">
+    <div class="container {{ demo.container.class }}">
+        <h2 class="font-md regular">Stay updated</h2>
+    </div>
+    <p class="text-secondary mb-5">By registering with us you will receive right in your inbox all new features and
+        updates</p>
+
+    <div class="row">
+        <div class="col-12 col-md-6 mx-auto overflow-hidden">
+            {% set vars = { button: { class: "btn-primary" } } %}
+            {% include "~sections/form/register.nunjucks" %}
+        </div>
+    </div>
+
+    <hr class="mt-5">
+    <nav class="nav social-icons justify-content-center mt-4">
+        <a href="#" class="mr-3 font-regular text-secondary"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="mr-3 font-regular text-secondary"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="mr-3 font-regular text-secondary"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="mr-3 font-regular text-secondary"><i class="fas fa-rss"></i></a>
+        <a href="#" class="font-regular text-secondary"><i class="fab fa-linkedin-in"></i></a>
+    </nav>
+
+    <p class="small copyright text-secondary">
+        © 2018 Dashcore, <em>by</em> <a class="brand bold" href="http://www.5studios.net">5Studios.net</a>
+    </p>
+</footer>

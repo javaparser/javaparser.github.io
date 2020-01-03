@@ -1,0 +1,14 @@
+{% set tabs = { id: "bordered", class: "nav-tabs tabs-bordered" } %}
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Bordered</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                {% include "~components/tabs/_content.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,40 @@
+{% set steps = [
+{ title: "Step 1", description: "This is step description", icon: "fa-lock" },
+{ title: "Step 2", description: "This is step description", icon: "fa-user" },
+{ title: "Step 3", description: "This is step description", icon: "fa-credit-card" },
+{ title: "Step 4", description: "This is step description", icon: "fa-check-square" }
+] %}
+<!-- ./Wizard - Simple Ajax example -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Simple Ajax example</h2>
+            <p class="lead">This example shows you how to load the wizard step by using ajax calls.</p>
+        </div>
+
+        <div id="ajax-wizard" class="wizard">
+            <ul class="mb-5 justify-content-center">
+                {% for step in steps %}
+                <li>
+                    <a href="#aw-step-{{ loop.index }}"
+                        {{ ('data-content-url="wizard/step-' + loop.index + '"') | safe if loop.index > 1 }}>
+                        <i class="fas {{ step.icon }} mb-2"></i>
+                        <p class="bold my-0">{{ step.title }}</p>
+                        <span class="small text-secondary">{{ step.description }}</span>
+                    </a>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <div class="mb-5">
+                {% for step in steps %}
+                <div id="aw-step-{{ loop.index }}">
+                    {% if loop.index === 1 %}
+                    {% include "~components/wizard/clean/" + loop.index + ".nunjucks" %}
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

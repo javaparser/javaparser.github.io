@@ -1,0 +1,25 @@
+{% set features = [
+{ title: 'Feature 1', icon: '1', description: 'Lorem ipsum dolor' },
+{ title: 'Feature 2', icon: '2', description: 'Sit amet' },
+{ title: 'Feature 3', icon: '3', description: 'Consectetur adipisicing' }
+] %}
+<section id="features" class="section bg-darker text-contrast">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h5 class="text-secondary bold text-uppercase">Why buy Dashcore?</h5>
+            <h2 class="font-md light">Buy one template, get all you need</h2>
+        </div>
+
+        <div class="row gap-y text-center">
+            {% for feature in features -%}
+            <div class="col-md-4 py-4">
+                <span class="rounded-highlight rounded-highlight-3">
+                    <img src="./public/img/demo/icons/{{feature.icon}}.png" class="icon icon-xl" alt="">
+                </span>
+                <h5 class="regular mt-5">{{feature.title}}</h5>
+                <p class="light text-contrast">{{feature.description}}</p>
+            </div>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

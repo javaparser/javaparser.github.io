@@ -1,0 +1,10 @@
+<div class="media align-items-center">
+    <img class="d-flex mr-3 rounded-circle shadow" src="{{ baseUrl.path }}public/img/avatar/author.jpg" alt="...">
+    <div class="media-body">
+        <h5 class="my-0 bold">Jane Doe</h5>
+        <span class="text-secondary">VP Sales, Dashcore Inc.</span>
+        <hr>
+        <p class="small text-secondary mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+            animi, asperiores commodi cum cupiditate dignissimos doloremque eligendi est exercitationem.</p>
+    </div>
+</div>

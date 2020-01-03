@@ -1,0 +1,5 @@
+<div class="response-message">
+    <i class="fas fa-envelope font-lg"></i>
+    <p class="font-md m-0">Check your email</p>
+    <p class="response">We sent you an email with a link to get started. You’ll be in your account in no time.</p>
+</div>

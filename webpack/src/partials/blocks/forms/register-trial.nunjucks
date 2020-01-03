@@ -1,0 +1,30 @@
+<!-- ./Register Trial Form -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row align-items-center">
+            <div class="col-md-7 order-md-2">
+                <div class="device browser shadow" data-aos="fade-left">
+                    <div class="screen">
+                        <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/screens/dash/1.png" class="img-responsive"
+                            alt="...">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <h4 class="text-uppercase">Start your free trial today</h4>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, consequatur
+                    dignissimos esse illo in non odit porro quaerat quisquam temporibus.</p>
+
+                <form class="form form-trial" name="form-trial" novalidate="">
+                    <div class="form-group">
+                        <input type="email" name="TrialForm[email]" class="form-control"
+                            placeholder="Your valid email address" required="">
+                    </div>
+
+                    <button type="submit" class="btn btn-rounded btn-primary">Start your free trial</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

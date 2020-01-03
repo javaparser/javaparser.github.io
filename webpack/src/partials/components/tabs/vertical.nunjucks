@@ -1,0 +1,15 @@
+<!-- TODO -->
+{% set tabs = { id: "vertical", class: "nav-tabs nav-pills flex-column" } %}
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Outlined</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                {% include "~components/tabs/_content.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

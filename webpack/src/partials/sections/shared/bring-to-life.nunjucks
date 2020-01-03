@@ -1,0 +1,89 @@
+<!-- ./Bring to life - Swiper -->
+<section class="section bg-light">
+    <div class="container bring-to-front">
+        <div class="row gap-y align-items-center">
+            <div class="col-md-6">
+                <div class="rounded bg-primary-gradient shadow">
+                    <div class="d-flex flex-column align-items-center py-3">
+                        <img src="./public/img/bg/asset-1.svg" class="img-responsive w-50" alt="">
+                    </div>
+                </div>
+
+                <div class="rounded shadow-box bg-contrast mt-3">
+                    <div class="media align-items-center px-3">
+                        <i data-feather="bar-chart" class="stroke-primary mr-3" width="36" height="36"></i>
+                        <div class="media-body my-3 pl-3 b-l">
+                            <p class="bold text-primary my-0">Admin template included</p>
+                            <p class="my-0 text-secondary">We've included a fully functional starter admin dashboard</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded shadow-box bg-contrast mt-3">
+                    <div class="media align-items-center px-3">
+                        <i data-feather="smartphone" width="36" height="36" class="stroke-primary mr-3"></i>
+                        <div class="media-body my-3 pl-3 b-l">
+                            <p class="bold text-primary my-0">Powered with multiple starter apps</p>
+                            <p class="my-0 text-secondary">It's awesome you to have a nice feature to show up</p>
+
+                            <hr class="my-3">
+                            <nav id="sw-nav-1" class="nav nav-tabs tabs-clean border-bottom-0">
+                                <a href="javascript:;"
+                                    class="nav-item nav-link pl-md-0 py-0 d-flex flex-column align-items-center border-bottom-0 active"
+                                    data-step="1">
+                                    <i data-feather="mail" class="icon"></i>
+                                    <span class="d-none small">Inbox</span>
+                                </a>
+                                <a href="javascript:;"
+                                    class="nav-item nav-link py-0 d-flex flex-column align-items-center border-bottom-0"
+                                    data-step="2">
+                                    <i data-feather="calendar" class="icon"></i>
+                                    <span class="d-none small">Calendar</span>
+                                </a>
+                                <a href="javascript:;"
+                                    class="nav-item nav-link py-0 d-flex flex-column align-items-center border-bottom-0"
+                                    data-step="3">
+                                    <i data-feather="file" class="icon"></i>
+                                    <span class="d-none small">Invoice</span>
+                                </a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 ml-md-auto text-center text-md-left">
+                <span class="rounded-pill shadow-box badge badge-info bold py-2 px-4">Simple and transparent</span>
+
+                <h2 class="mt-3">Bring your application to life</h2>
+                <p class="text-secondary">Dashcore includes an outstanding starter Admin Dashboard UI Interface. With
+                    this
+                    feature you can start developing right away your web application.</p>
+
+                <hr>
+                <div class="swiper-container" data-sw-navigation="#sw-nav-1" data-sw-navigation-active="active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <figure class="shadow-box">
+                                <img src="./public/img/screens/dash/inbox.png" alt="" class="img-responsive rounded">
+                            </figure>
+                            <p class="small text-center text-danger">Clean inbox UI design</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="shadow-box">
+                                <img src="./public/img/screens/dash/calendar.png" alt="" class="img-responsive rounded">
+                            </figure>
+                            <p class="small text-center text-danger">Outstanding calendar UI design</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <figure class="shadow-box">
+                                <img src="./public/img/screens/dash/invoice.png" alt="" class="img-responsive rounded">
+                            </figure>
+                            <p class="small text-center text-danger">Draft purchases with the invoice feature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+{% set posts = [
+{ title: "Discover the Beauty of DashCore", author: "Jenny Oliver", gravity: 'north', favorite: { icon: 'fas fa-heart text-danger', count: 347 }, bookmark: { icon: 'far fa-bookmark', count: 73 } },
+{ title: "Extending DashCore Template", author: "Jennifer Wells", gravity: 'south', favorite: { icon: 'far fa-heart', count: 415 }, bookmark: { icon: 'fas fa-bookmark text-warning', count: 98 } },
+{ title: "5 Reasons to Choose DashCore", author: "Roger Sanchez", gravity: 'east', favorite: { icon: 'far fa-heart', count: 152 }, bookmark: { icon: 'far fa-bookmark', count: 13 } }
+] %}
+
+<h4>Recommended Posts</h4>
+
+<div class="row gap-y">
+    {% for post in posts -%}
+        {% set p = post %}
+        <div class="col-md-6 col-lg-4">
+            {% include "~blog/grid/_card.nunjucks" %}
+        </div>
+    {%- endfor %}
+</div>

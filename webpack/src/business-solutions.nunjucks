@@ -1,0 +1,36 @@
+{% set main = { class: "overflow-hidden" } %}
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/business-solutions.nunjucks" %}
+
+{% set shape = { text: "contrast" } %}
+{% include "~blocks/dividers/curve.nunjucks" %}
+
+{% include "~sections/business-solutions/integration-icons.nunjucks" %}
+{% include "~sections/business-solutions/start-business.nunjucks" %}
+
+{% include "~sections/business-solutions/features-slider.nunjucks" %}
+{% include "~sections/business-solutions/testimonials.nunjucks" %}
+{% include "~sections/business-solutions/pricing.nunjucks" %}
+
+{% set shape = { text: "dark", class: "mt-12n" } %}
+{% include "~blocks/dividers/curve.nunjucks" %}
+
+{% include "~sections/business-solutions/pricing-include.nunjucks" %}
+{% include "~sections/business-solutions/get-theme.nunjucks" %}
+
+{% set shape = { text: "contrast" } %}
+{% include "~blocks/dividers/curve.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { container: { class: "pb-3" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

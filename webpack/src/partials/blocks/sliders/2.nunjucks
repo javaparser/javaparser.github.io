@@ -1,0 +1,26 @@
+<!-- ./Slider - navigation -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="section-heading text-center">
+            <h2 class="font-md">Navigation</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="swiper-container" data-sw-nav-arrows=".swiper2-button" data-sw-pagination="false">
+                    <div class="swiper-wrapper">
+                        {% for gr in gravities %}
+                            <div class="swiper-slide px-5">
+                                <img src="https://picsum.photos/540/360/?random&gravity={{ gr }}" alt="" class="img-responsive">
+                            </div>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper2-button-next"></div>
+                    <div class="swiper-button-prev swiper2-button-prev"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

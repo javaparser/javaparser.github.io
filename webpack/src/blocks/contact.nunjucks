@@ -1,0 +1,15 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Contact',
+subtitle : "Including a Contact Form? Try out one of the variations we bring you.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/contact/1.nunjucks" %}
+{% endblock %}

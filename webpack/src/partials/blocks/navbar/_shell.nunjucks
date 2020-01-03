@@ -1,0 +1,24 @@
+<!-- ./Main navigation -->
+<nav class="navbar navbar-expand-md navigation sidebar-left {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <button class="navbar-toggler" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <a href="#main" class="navbar-brand">
+            <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo.png" alt="Dashcore" class="logo logo-sticky">
+        </a>
+
+        <div class="collapse navbar-collapse ml-auto">
+            <div class="sidebar-brand">
+                <a href="#main">
+                    <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo.png" alt="Dashcore Template" class="logo">
+                </a>
+            </div>
+
+            {% block navbar %} {% endblock %}
+        </div>
+    </div>
+</nav>

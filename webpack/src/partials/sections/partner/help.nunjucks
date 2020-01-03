@@ -1,0 +1,32 @@
+<!-- ./Partners - Need help -->
+<section class="section b-b bg-light edge top-left">
+    <div class="container">
+        <div class="mb-5 text-center">
+            <h2>Need help?</h2>
+            <p class="lead text-secondary">Should you encounter challenges, we are of course ready to help you. Below
+                you can see our contact options as well as opening hours.</p>
+        </div>
+
+        <div class="row gap-y align-items-center text-center text-md-left">
+            {% set channels = [
+                { icon: "mail", title: "Send us an email", info: "kundeservice@pakkelabels.dk", href: "mailto:kundeservice@pakkelabels.dk" },
+                { icon: "headphones", title: "Call us", info: "+45 70 400 407", href: "tel:+4570400407" },
+                { icon: "clock", title: "Opening hours", info: "All weekdays 9.00-16.00", href: "contact.html" }
+            ] %}
+
+            {% for channel in channels %}
+            <div class="col-md-4">
+                <div class="card shadow-box shadow-hover border-0 off-left-background">
+                    <div class="card-body">
+                        <i data-feather="{{ channel.icon }}" width="36" height="36" class="stroke-primary"></i>
+                        <h4 class="mt-4">{{ channel.title }}</h4>
+
+                        <p class="mt-0"><a href="{{ channel.href }}">{{ channel.info }}</a></p>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

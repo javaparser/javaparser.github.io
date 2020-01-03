@@ -1,0 +1,32 @@
+<!-- ./Features - Boxed -->
+<section class="section features bg-light-gradient">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Our features stack</h2>
+            <p class="lead text-secondary">Take the control of your web with DashCore. You can customize the theme
+                according to your needs or just use the ready-to-use content we made for you</p>
+        </div>
+        {% set features = [
+            { icon : "phone", title: "Responsive" },
+            { icon : "settings", title: "Customizable" },
+            { icon : "award", title: "Clean Code" },
+            { icon : "star", title: "Creative" },
+            { icon : "send", title: "Ready-Content" },
+            { icon : "headphones", title: "Supported" },
+            { icon : "hard-drive", title: "Documented" },
+            { icon : "box", title: "Components" }
+        ] %}
+        <div class="row gap-y">
+            {% for feature in features %}
+            <div class="col-md-3">
+                <div class="shadow-box shadow-hover border-0 card">
+                    <div class="card-body text-center">
+                        <i data-feather="{{ feature.icon }}" class="stroke-primary" width="36" height="36"></i>
+                        <p class="mb-0">{{ feature.title }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

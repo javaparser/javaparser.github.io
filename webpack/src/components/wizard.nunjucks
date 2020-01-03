@@ -1,0 +1,17 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Wizard',
+subtitle : "Wizards help you to make a sequel of interaction more user-friendly and also visually appealing for the users.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+{% include "~components/wizard/1.nunjucks" %}
+{% include "~components/wizard/2.nunjucks" %}
+{% include "~components/wizard/3.nunjucks" %}
+{% include "~components/wizard/4.nunjucks" %}
+{% include "~components/wizard/5.nunjucks" %}
+{% endblock %}

@@ -1,0 +1,46 @@
+<section class="section quick-start-your-business">
+    <div class="container-fluid bring-to-front pb-md-10">
+        <div class="row gap-y align-items-center">
+            <div class="col-10 col-lg-4 mx-auto order-md-2">
+                <div class="mb-5 text-center text-lg-left">
+                    <h2>Quick start your business <br> <span class="text-primary">with the right tools</span></h2>
+
+                    <p class="lead text-muted">
+                        DashCore helps you Build a modern & beautiful web presence.
+                        Our growing set of components will make your life waaaay easier.
+                    </p>
+                </div>
+
+                {% set features = [
+                    { title: "Perfect for modern and growing Apps & Startups", icon: "arrow-right" },
+                    { title: "Predesigned growing set of modern web components", icon: "arrow-right" },
+                    { title: "Modern & eye-catching design to enchant your visitors", icon: "arrow-right" },
+                    { title: "Focus on your business, don't worry about your website", icon: "arrow-right" }
+                ] %}
+                <ul class="list-unstyled">
+                    {% for feature in features %}
+                    <li class="py-2">
+                        <div class="d-flex align-items-center">
+                            <div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
+                                <i data-feather="{{ feature.icon }}" class="stroke-contrast"></i>
+                            </div>
+
+                            <p class="my-0">{{ feature.title }}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+                <a href="#!" class="btn btn-primary btn-rounded mt-4">Know More</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pl-0 order-md-1">
+                <div class="browser shadow" data-aos="fade-right">
+                    <div class="screen">
+                        <img src="./public/img/screens/dash/1.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

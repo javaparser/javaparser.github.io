@@ -1,0 +1,15 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Default colors</h2>
+            <p class="lead">Documentation and examples for badges, our small count and labeling component.</p>
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Bootstrap default</p>
+        <div class="d-flex flex-wrap justify-content-around">
+            {% for badge in badges.bootstrap -%}
+            <span class="badge badge-{{ badge }}">{{ badge | capitalize }}</span>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

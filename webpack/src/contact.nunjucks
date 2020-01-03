@@ -1,0 +1,26 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% set page = {
+        title: 'Contact us',
+        subtitle : "Get in touch and let us know how we can help. Fill out the form and we’ll be in touch as soon as possible.",
+        class: 'gradient gradient-purple-blue',
+        container: { class : "pb-9" }
+    } %}
+
+{% include "~heading/page-wave.nunjucks" %}
+
+{% include "~sections/contact/contact-form.nunjucks" %}
+{% include "~sections/contact/other-channels.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { class: "block bg-contrast", container: { class: "py-4" } } %}
+{% include "~blocks/footers/simple-3cols.nunjucks" %}
+{% endblock %}

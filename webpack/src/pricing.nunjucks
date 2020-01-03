@@ -1,0 +1,29 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% set page = {
+        title: 'Pricing plans',
+        subtitle : "Simple and affordable pricing plans. Try Dashcore with no obligation",
+        class: 'overlay gradient gradient-purple-blue'
+    } %}
+{% include "~heading/page-wave.nunjucks" %}
+
+{% include "~sections/pricing/cards.nunjucks" %}
+{% include "~sections/pricing/includes.nunjucks" %}
+{% include "~sections/shared/faqs.nunjucks" %}
+{% include "~sections/shared/register.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left b-b", container: { class: "pt-5" } } %}
+{% include "~blocks/cta/1.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { container: { class: "pb-2" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

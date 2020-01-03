@@ -1,0 +1,16 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Tabs',
+subtitle : "Takes the basic nav and adds the <code>.nav-tabs</code> class to generate a tabbed interface. Use them to create tabbable regions with our tab JavaScript plugin.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+{% include "~components/tabs/default.nunjucks" %}
+{% include "~components/tabs/bordered.nunjucks" %}
+{% include "~components/tabs/outlined.nunjucks" %}
+{% include "~components/tabs/clean.nunjucks" %}
+{% endblock %}

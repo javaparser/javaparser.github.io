@@ -1,0 +1,45 @@
+{% set steps = [
+{ title: "Account", description: "Account details", icon: "fa-lock" },
+{ title: "Personal", description: "Personal information", icon: "fa-user" },
+{ title: "Plan", description: "Your plan", icon: "fa-play" },
+{ title: "Payment", description: "Credit card", icon: "fa-credit-card" },
+{ title: "Confirm", description: "Proceed details", icon: "fa-check-square" }
+] %}
+<!-- ./Wizard - Avanced Ajax Form Example -->
+<section class="section">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Advanced Ajax Form Example</h2>
+            <p class="lead">In this example you can customize the form submission via ajax and validation.</p>
+            <p class="alert alert-info alert-icon shadow-sm rounded">
+                <i class="icon fas fa-info-circle"></i>
+                <small>Demo note: No request is saved or processed. All ajax call are just delayed by 2 secs to simulate
+                    a server process.</small>
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div id="form-wizard" class="wizard">
+                    <ul class="mb-5 justify-content-center">
+                        {% for step in steps %}
+                        <li>
+                            <a href="#fw-step-{{ loop.index }}">
+                                <i class="fas {{ step.icon }}"></i>
+                                <p class="bold my-0 desc">{{ step.title }}</p>
+                                <!-- <span class="small text-secondary text-capitalize">{{ step.description }}</span> -->
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <div class="mb-5">
+                        {% for step in steps %}
+                        <div id="fw-step-{{ loop.index }}"></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

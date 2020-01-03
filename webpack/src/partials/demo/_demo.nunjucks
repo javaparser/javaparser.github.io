@@ -1,0 +1,25 @@
+<div class="card card-demo card--blog shadow-box border-0">
+    <div class="card-body d-flex align-items-center">
+        {% if demo.new %}
+        <span class="is-new badge badge-danger badge-pill">New</span>
+        {% endif %}
+        <h4 class="card-title mb-0 text-capitalize">{{ demo.title }}</h4>
+
+        <nav class="btn-group ml-auto">
+            {% for url in demo.urls %}
+            <a href="{{ url.link }}" target="_blank" class="btn btn-{{ demo.btn.class }} btn-rounded px-3 shadow-none">
+                <i class="icon {{ url.icon }}"></i>
+                <span class="demo-link-text">{{ url.text }}</span>
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
+
+    <figure class="preview-overlay m-0">
+        <div class="preview-pane">
+            <div class="preview-page" data-simplebar>
+                <img class="card-img-bottom img-responsive" src="./public/img/demo/screen/{{ demo.cover }}.png" alt="">
+            </div>
+        </div>
+    </figure>
+</div>

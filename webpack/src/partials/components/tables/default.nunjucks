@@ -1,0 +1,11 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Basic</h2>
+            <p class="lead">Using the most basic table markup, here’s how .table-based tables look in Bootstrap.</p>
+        </div>
+
+        {% set table = { class: "" } %}
+        {% include "~components/tables/_table.nunjucks" %}
+    </div>
+</section>

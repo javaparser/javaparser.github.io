@@ -1,0 +1,30 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Team',
+subtitle : "Reveal the people behind your product with these design blocks",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% set team = [
+{ name: "Rafael Freeman", position: "Founder & CEO", quote: "Long time ago, this guy started it all.", social: ["facebook", "twitter", "dribbble"], onStatic: true },
+{ name: "Aline De Souza", position: "Marketing Director", quote: "The girl that influences our products.", social: ["facebook", "twitter", "dribbble"], onStatic: true },
+{ name: "Jayden Gardner", position: "Account Manager", quote: "Keeps all the numbers in place.", social: ["facebook", "twitter", "dribbble"], onStatic: true },
+{ name: "Jacobi Edwards", position: "VP of Sales", quote: "The man that leads the Global Sales team.", social: ["facebook", "twitter", "dribbble"], onStatic: true },
+{ name: "Allison Fernandez", position: "Client Support", quote: "Need any assistance with the product?", social: ["facebook", "twitter", "dribbble"], onStatic: false },
+{ name: "Richard Smith", position: "Lead Developer", quote: "Geek, manager, and manager of geeks.", social: ["facebook", "twitter", "dribbble"], onStatic: false }
+] %}
+
+{% block main %}
+{% include "~blocks/team/1.nunjucks" %}
+{% include "~blocks/team/2.nunjucks" %}
+{% include "~blocks/team/4.nunjucks" %}
+{% include "~blocks/team/5.nunjucks" %}
+
+{% set section = { class: "block bg-contrast", container: { class: "pb-4" } } %}
+{% include "~blocks/team/3.nunjucks" %}
+{% endblock %}

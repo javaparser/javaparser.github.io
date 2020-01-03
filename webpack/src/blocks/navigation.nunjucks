@@ -1,0 +1,18 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Navigation',
+subtitle : "Navigation available in Bootstrap share general markup and styles, from the base .nav class to the active and disabled states. Swap modifier classes to switch between each style.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/navigation/list-shadow.nunjucks" %}
+{% include "~blocks/navigation/list-dotted.nunjucks" %}
+{% include "~blocks/navigation/list-solid.nunjucks" %}
+{% include "~blocks/navigation/list-hovered.nunjucks" %}
+{% endblock %}

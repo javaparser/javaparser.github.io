@@ -1,0 +1,13 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Dividers',
+subtitle : "Shapes are a <span class='bold'>top design trend</span> to give your design a refreshig touch. Transform your pages into a professional good looking design.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+
+{% endblock %}

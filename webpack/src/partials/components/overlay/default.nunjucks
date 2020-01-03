@@ -1,0 +1,25 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Overlay</h2>
+            <p class="lead">Easily add an overlay to any element by including <code>.overlay</code> class.</p>
+        </div>
+
+        {% for o in overlays -%}
+        <code class="text-center bold d-block mb-3 mt-4">.overlay-{{ o.name }}</code>
+        <div class="row gap-y">
+            {% for a in range(1, 10) -%}
+            <div class="col-md-4">
+                <div class="shadow-box image-background cover overlay overlay-{{ o.name }} alpha-{{ a }}"
+                    style="background-image: url(https://picsum.photos/350/200/?random)">
+                    <div class="content px-3 py-6">
+                        <h6 class="text-{{ o.color }} text-center">Overlay text</h6>
+                    </div>
+                </div>
+                <p class="small text-center mt-2">.alpha-{{ a }}</p>
+            </div>
+            {%- endfor %}
+        </div>
+        {%- endfor %}
+    </div>
+</section>

@@ -1,0 +1,42 @@
+<!-- ./Overview - Floating boxes -->
+<section class="section overview">
+    <div class="container">
+        <div class="row align-items-center gap-y">
+            <div class="col-lg-5 mr-auto text-center text-md-left">
+                <div class="section-heading">
+                    <p class="badge badge-success bold">Succeed with DashCore</p>
+                    <h2>The new way to showcase your Startup</h2>
+
+                    <p class="lead text-secondary">DashCore is a Bootstrap 4 HTML template. Designed to help you promote
+                        your
+                        solution in an easy and beautiful way.</p>
+                </div>
+
+                <p>It includes multiple components and pre-made demos ready for you to personalize according to your own
+                    needs. DashCore includes a ready-to-go Admin Dashboard with many out-of-the-box features.</p>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row gap-y">
+                    {% set cards = [
+                    { icon: "calendar", iconClass: "stroke-primary", title: "Calendar", description:"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at, cumque dolores dolorum est.", class: "mt-6 ml-lg-auto", bg: "", animation: "fade-up" },
+                    { icon: "bar-chart", iconClass: "", title: "Dashboard", description:"Cupiditate debitis delectus dolor dolore doloremque, doloribus eveniet illo in labore neque.", class: "mr-lg-auto", bg: "text-contrast bg-info-gradient", animation: "fade-up" },
+                    { icon: "mail", iconClass: "stroke-primary", title: "Inbox", description:"Amet aperiam cumque delectus eligendi, esse, modi nemo nisi officiis rem repellat sed ulla.", class: "ml-lg-auto", bg: "", animation: "fade-up" },
+                    { icon: "clipboard", iconClass: "stroke-primary", title: "Invoicing", description:"Ad aliquam dicta, eaque eos iusto totam velit. Amet atque dolorum eaque ipsa sed. Aliquid cupiditate.", class: "mt-6n mr-lg-auto", bg: "", animation: "fade-up" }
+                    ] %}
+
+                    {% for card in cards %}
+                    <div class="col-6 col-sm-5 col-md-6 {{ card.class }}">
+                        <div class="{{ card.bg }} card rounded p-2 p-sm-4 shadow text-center text-md-left"
+                            data-aos="{{ card.animation }}">
+                            <i data-feather="{{ card.icon }}" width="36" height="36" class="{{ card.iconClass }}"></i>
+                            <p class="bold mb-0">{{ card.title }}</p>
+                            <p class="op-7 small">{{ card.description }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,24 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Sliders',
+subtitle : "An element of a web page that displays multiple images and text alternate between them.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set gravities = ['north', 'south', 'west', 'east'] %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+<!-- Since there are multiple sliders on the same page, we need to use data-sw-pagination="false" and/or data-sw-nav-arrows="false"
+        where "pagination" or "navigation arrows" are no required, this is to avoid Swiper takes the default css selector for every instance,
+        thus swiping all sliders at once. -->
+{% include "~blocks/sliders/1.nunjucks" %}
+{% include "~blocks/sliders/2.nunjucks" %}
+{% include "~blocks/sliders/3.nunjucks" %}
+{% include "~blocks/sliders/4.nunjucks" %}
+{% include "~blocks/sliders/5.nunjucks" %}
+{% endblock %}

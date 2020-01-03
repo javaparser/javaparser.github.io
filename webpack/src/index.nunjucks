@@ -1,0 +1,15 @@
+{% extends "~layout/demo.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", blocks: "blocks/", components: "components/", pages: "" } %}
+
+{% block content %}
+{% include "~demo/heading.nunjucks" %}
+{% include "~demo/features.nunjucks" %}
+{% include "~demo/selection.nunjucks" %}
+{% include "~demo/purchase.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set footer = { class: "block bg-light edge top-left" } %}
+{% include "~demo/layout/footer.nunjucks" %}
+{% endblock %}

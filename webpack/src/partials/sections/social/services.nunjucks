@@ -1,0 +1,32 @@
+<!-- ./Services -->
+<section class="section bg-light b-b edge top-left">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>What <span class="bold">We Offer</span></h2>
+            <p class="text-secondary lead">DashCore is a complete set of design and developing tools. Either your
+                business is
+                just starting or have years on the market, you can take advantage of it.</p>
+        </div>
+
+        {% set cards = [
+            { icon: { name: "envelope", class: "text-info" }, title: { text: "Inbox", class: "" } },
+            { icon: { name: "chart-line", class: "" }, title: { text: "Reports", class: "" }, class: " text-contrast shadow-lg bg-info" },
+            { icon: { name: "calendar-alt", class: "text-danger" }, title: { text: "Calendar", class: "" } },
+
+            { icon: { name: "file-invoice", class: "text-success" }, title: { text: "Invoices" } },
+            { icon: { name: "bullseye", class: "text-primary" }, title: { text: "Content" } }
+        ] %}
+        <div class="d-flex justify-content-center align-items-center">
+            {% for card in cards %}
+            <div
+                class="card shadow-lg off-left-background border-0{{ card.class }}{{ " mr-3" if loop.index < loop.length }}">
+                <div class="card-body p-md-5 text-center">
+                    <i class="fas fa-{{ card.icon.name }} pe-2x {{ card.icon.class }}"></i>
+                    <p class="bold {{ card.title.class }}">{{ card.title.text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,18 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+    title: 'Tables',
+    subtitle : "Documentation and examples for opt-in styling of tables (given their prevalent use in JavaScript plugins) with Bootstrap.",
+    class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+{% include "~components/tables/default.nunjucks" %}
+{% include "~components/tables/striped.nunjucks" %}
+{% include "~components/tables/bordered.nunjucks" %}
+{% include "~components/tables/borderless.nunjucks" %}
+{% include "~components/tables/hoverable.nunjucks" %}
+{% include "~components/tables/responsive.nunjucks" %}
+{% endblock %}

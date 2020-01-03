@@ -1,0 +1,22 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/fixed-top.nunjucks" %}
+{% endblock %}
+
+{% set page = {
+title: "Here's some reasons why Dashcore is your best choice when picking a template",
+class: 'gradient gradient-purple-blue',
+row: 12
+} %}
+
+{% block content %}
+{% include "~demo/layout/page.nunjucks" %}
+{% include "~blog/post-left-sidebar.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% include "~demo/layout/footer.nunjucks" %}
+{% endblock %}

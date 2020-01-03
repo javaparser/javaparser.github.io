@@ -1,0 +1,67 @@
+<section class="section">
+    <div class="container bring-to-front">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md-6 order-md-last">
+                <div class="mb-5">
+                    <p class="text-primary bold">Fill in the form</p>
+                    <h2>Your success is our success</h2>
+
+                    <p class="lead text-muted">
+                        If you're looking to be part of the most suitable template, just fill in the form, we're sure we
+                        can build great things together
+                    </p>
+                </div>
+
+                <div class="row">
+                    {% set features = [
+                        "Service integrations", "Partners integration", "Right technology", "Get discovered"
+                    ] %}
+
+                    {% for feature in features %}
+                    <div class="col-md-6">
+                        <div class="d-flex align-items-center">
+                            <div class="badge rounded-circle badge-primary mt-1 mr-4">
+                                <i data-feather="check" class="stroke-contrast"></i>
+                            </div>
+
+                            <p class="text-primary">{{ feature }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-5" data-aos="fade-right">
+                <div class="card shadow-lg">
+                    <img src="https://picsum.photos/500/300?random=1&gravity=south" alt="..." class="card-img-top">
+
+                    <div class="card-body">
+                        <form class="form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="Email">
+
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+
+                            </div>
+
+                            <div class="form-group mt-5">
+                                <button class="btn btn-rounded btn-primary btn-block btn-lg text-center" type="submit">
+                                    Send my application
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

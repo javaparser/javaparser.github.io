@@ -1,0 +1,4 @@
+<!-- ./Main Navigation -->
+<nav class="navbar navbar-expand-md main-nav navigation dark-link sidebar-left" id="main-nav">
+    {% include "~layout/navigation/_main.nunjucks" %}
+</nav>

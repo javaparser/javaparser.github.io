@@ -1,0 +1,14 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Light badges</h2>
+            <p class="lead">Some colors are better seen on dark backgrounds, those are the ones with light colors.</p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-around gradient gradient-purple-blue py-5">
+            {% for badge in badges.light -%}
+            <span class="badge badge-{{ badge }}">badge-{{ badge }}</span>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

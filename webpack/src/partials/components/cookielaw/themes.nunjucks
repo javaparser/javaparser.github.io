@@ -1,0 +1,11 @@
+<!-- ./CookieLaw - Themes -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Themes</h2>
+            <p class="lead">See what you can do with some of predefined themes</p>
+        </div>
+
+        <ul class="example-selector example-selector-themes"></ul>
+    </div>
+</section>

@@ -1,0 +1,19 @@
+<!-- ./CTA - Try it Free -->
+<section
+    class="section gradient overlay alpha-8 gradient-purple-blue image-background cover text-contrast {{ section.class }}"
+    style="background-image: url(https://picsum.photos/350/200/?random&gravity=south)">
+    <div class="container py-5 {{ section.container.class }}">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-contrast">Stop looking for a <span class="bold">template</span></h2>
+                <p class="op-8">With <span class="bold">DashCore</span> you will have everything you ever needed to
+                    showcase your solution.</p>
+            </div>
+
+            <div class="col-md-4 ml-md-auto">
+                <p class="handwritten highlight font-md mb-4">Why wait?</p>
+                <a href="javascript:;" class="btn btn-contrast btn-rounded ml-3">Try it Free</a>
+            </div>
+        </div>
+    </div>
+</section>

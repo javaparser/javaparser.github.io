@@ -1,0 +1,31 @@
+<!-- ./Top-notch appearance - Big screen left -->
+<section class="section">
+    <div class="shape-wrapper">
+        <img src="./public/img/shps/abs-shp-3.svg" class="h-100 absolute left top" alt="...">
+    </div>
+
+    <div class="container-wide bring-to-front">
+        <div class="row gap-y align-items-center text-center text-lg-left">
+            <div class="col-10 col-lg-4 mx-auto order-md-2">
+                <h2>Designed to provide top-notch appearance</h2>
+
+                <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                <p>Nullam vitae scelerisque est, sed tempus metus. Donec convallis volutpat enim consequat viverra. Nam
+                    blandit est eu ipsum elementum, ac pellentesque nibh placerat. Quisque venenatis pulvinar nulla, non
+                    vestibulum urna ultrices accumsan.</p>
+
+                <a href="#" class="btn btn-info btn-rounded mt-4">Learn More</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pl-0 order-md-1">
+                <div class="device browser" data-aos="fade-right">
+                    <div class="screen">
+                        <img src="./public/img/screens/dash/1.png" alt="" class="img-responsive shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

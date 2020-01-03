@@ -1,0 +1,59 @@
+<section class="section app-safety">
+    <div class="shapes-container">
+        <div class="shape shape-circle">
+            <div data-aos="fade-up-left"></div>
+        </div>
+        <div class="shape shape-ring shape-ring-2">
+            <div data-aos="fade-up-right" data-aos-delay="200"></div>
+        </div>
+        <div class="shape pattern pattern-dots"></div>
+    </div>
+
+    <div class="container">
+        <div class="row gap-y align-items-center">
+            <div class="col-md-5">
+                <div class="section-heading">
+                    <p class="text-primary bold">Safety first</p>
+                    <h2>You're in a secure company</h2>
+                    <p class="lead text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, fugiat
+                        suscipit eaque excepturi porro perspiciatis alias adipisci possimus. Ratione amet.</p>
+                </div>
+
+                {% set items = [
+                    { icon: "activity", title: "Real time activity", description: "Get instant insight on what's happening in your business" },
+                    { icon: "upload-cloud", title: "Instant deploy", description: "Deploy your project in a fraction of a second, no time!" }
+                ] %}
+                {% for item in items %}
+                <div class="media pb-3">
+                    <div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
+                        <i data-feather="{{ item.icon }}" class="stroke-primary"></i>
+                    </div>
+                    <div class="media-body">
+                        <h5>{{ item.title }}</h5>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class="col-md-7">
+                <div class="row align-items-center">
+                    {% set cards = [
+                        { class: "mt-md-6" },
+                        { class: "" },
+                        { class: "mt-md-6" },
+                        { class: "mx-auto mt-md-4n" }
+                    ] %}
+                    {% for card in cards %}
+                    <div class="col-md-4 {{ card.class }}">
+                        <div class="figure shadow rounded overflow-hidden border">
+                            <img class="img-responsive"
+                                src="https://picsum.photos/300/600?random={{ loop.index }}&gravity=south" alt="" />
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

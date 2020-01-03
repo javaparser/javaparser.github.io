@@ -1,0 +1,11 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Bordered table</h2>
+            <p class="lead">Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+        </div>
+
+        {% set table = { class: "table-bordered" } %}
+        {% include "~components/tables/_table.nunjucks" %}
+    </div>
+</section>

@@ -1,0 +1,22 @@
+<!-- .Screenshots -->
+<section class="screenshots coverflow">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 class="bold display-4">App Screenshots</h2>
+            <p class="text-secondary">A picture is worth a thousand words</p>
+        </div>
+
+        <div class="swiper-container" data-sw-show-items="5" data-sw-space-between="20" data-sw-centered-slides="true"
+            data-sw-autoplay="2500"
+            data-sw-breakpoints='{"1200": {"slidesPerView": 5,"spaceBetween": 0},"992": {"slidesPerView": 3, "spaceBetween": 0},"576": {"slidesPerView": 2,"spaceBetween": 0}}'>
+            <div class="swiper-wrapper">
+                {% for i in range(1, 7) -%}
+                <div class="swiper-slide"><img class="img-responsive"
+                        src="./public/img/screens/app/{{ i }}.png" alt="..."></div>
+                {%- endfor %}
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>

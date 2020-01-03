@@ -1,0 +1,55 @@
+<section class="b b-b">
+    <div class="container">
+        <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2"><a href=""><img src="./img/screens/section/1.png"
+                        class="img-responsive" alt=""></a></div>
+            <div class="col-md-5 mr-md-auto text-center text-md-right">
+                <span class="text-secondary alpha-4 regular text-uppercase">awesome feature</span>
+                <h2 class="bold">Easy customizable</h2>
+                <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus dolor
+                    est ipsam, itaque obcaecati omnis perspiciatis ullam vero voluptatum? Ab commodi delectus, hic iure
+                    perferendis placeat? Adipisci, laboriosam, nobis.</p>
+                <a href="#" class="btn btn-rounded btn-primary">Experience this</a>
+            </div>
+        </div>
+
+        <div class="row gap-y py-6 align-items-center">
+            <div class="col-md-6"><a href=""><img src="./public/img/screens/section/1.png"
+                        class="img-responsive" alt=""></a></div>
+            <div class="col-md-5 ml-md-auto text-center text-md-left">
+                <span class="text-secondary alpha-4 regular text-uppercase">you need this</span>
+                <h2 class="bold">Browser compatibility</h2>
+                <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi eligendi
+                    esse et eveniet ex exercitationem facere, labore molestias nostrum nulla obcaecati omnis
+                    perspiciatis quae qui reprehenderit sapiente sunt vel.</p>
+                <a href="#" class="btn btn-rounded btn-primary">Experience this</a>
+            </div>
+        </div>
+
+        <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2"><a href=""><img src="./public/img/screens/section/1.png"
+                        class="img-responsive" alt=""></a></div>
+            <div class="col-md-5 mr-md-auto text-center text-md-right">
+                <span class="text-secondary alpha-4 regular text-uppercase">awesome feature</span>
+                <h2 class="bold">Full documentation</h2>
+                <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur culpa debitis
+                    deserunt eaque enim fugit harum iste labore laborum mollitia nisi quam quia quo ratione, rerum sed,
+                    sit soluta voluptate!</p>
+                <a href="#" class="btn btn-rounded btn-primary">Experience this</a>
+            </div>
+        </div>
+
+        <div class="row gap-y py-6 align-items-center">
+            <div class="col-md-6"><a href=""><img src="./public/img/screens/section/1.png"
+                        class="img-responsive" alt=""></a></div>
+            <div class="col-md-5 ml-md-auto text-center text-md-left">
+                <span class="text-secondary alpha-4 regular text-uppercase">brand new</span>
+                <h2 class="bold">Unlimited possibilities</h2>
+                <p class="mt-4 mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi commodi eligendi
+                    esse et eveniet ex exercitationem facere, labore molestias nostrum nulla obcaecati omnis
+                    perspiciatis quae qui reprehenderit sapiente sunt vel.</p>
+                <a href="#" class="btn btn-rounded btn-primary">Experience this</a>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,59 @@
+<!-- ./Why DashCore -->
+<section class="section bg-light">
+    <div class="container bring-to-front pb-0">
+        <div class="section-heading text-center w-75 mx-auto">
+            <h2>Why Dashcore template?</h2>
+            <p class="lead text-secondary">When you're looking for a template you want it to stand-out. Dashcore comes
+                with
+                hundreds of customizable features addressed to developers and designers.</p>
+        </div>
+
+        <div class="shadow bg-contrast p-5 rounded">
+            <nav class="nav nav-tabs tabs-clean slide d-inline-flex mb-4">
+                <a class="nav-item nav-link text-uppercase bold active" data-toggle="tab" href="#designers">
+                    Developers
+                </a>
+                <a class="nav-item nav-link text-uppercase bold" data-toggle="tab" href="#developers">
+                    Designers
+                </a>
+            </nav>
+
+            <div class="tab-content">
+                <div class="tab-pane active" id="designers">
+                    <div class="row gap-y">
+                        <div class="col-lg-6">
+                            <h2 class="bold mb-4">Engaging developers with organized code</h2>
+                            <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Culpa
+                                cumque deleniti facere ipsa laborum saepe, tenetur ullam? Consequatur, deserunt eaque
+                                facilis hic, illo laboriosam minima quae quia temporibus totam vel.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <figure class="px-2">
+                                <img src="./public/img/screens/developer.png"
+                                    class="img-responsive shadow rounded" alt="...">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="developers">
+                    <div class="row gap-y">
+                        <div class="col-lg-6">
+                            <h2 class="bold mb-4">Engaging designers with tons of design elements</h2>
+                            <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Culpa
+                                cumque deleniti facere ipsa laborum saepe, tenetur ullam? Consequatur, deserunt eaque
+                                facilis hic, illo laboriosam minima quae quia temporibus totam vel.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <figure class="px-2">
+                                <img src="./public/img/screens/designer.png"
+                                    class="img-responsive shadow rounded" alt="...">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

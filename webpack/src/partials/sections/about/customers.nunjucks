@@ -1,0 +1,32 @@
+<!-- ./Customers -->
+<section class="section bg-contrast edge bottom-right">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Third party integration</h2>
+            <p class="text-secondary lead">We use the latest trends because you deserve better</p>
+        </div>
+
+        <ul class="list-unstyled d-flex flex-wrap justify-content-around">
+            {% set images = [
+            { image: 1, margin: 6, aos: "fade-right"},
+            { image: 2, margin: 4, aos: "fade-down-right"},
+            { image: 3, margin: 5, aos: "fade-up-right"},
+            { image: 4, margin: 6, aos: "fade-up"},
+            { image: 5, margin: 4, aos: "fade-down-left"},
+            { image: 1, margin: 5, aos: "fade-up-left"},
+            { image: 2, margin: 6, aos: "fade-left"}
+            ] %}
+            {% for i in images -%}
+            <li data-aos-easing="ease-in-out-cubic" data-aos="{{ i.aos }}" data-aos-delay="{{ (i.image-1) * 100 }}"
+                class="shadow-box bg-light rounded-circle icon-xxl image-background contain mt-{{ i.margin }}"
+                style="background-image: url(./public/img/logos/{{ i.image }}.png)"></li>
+            {%- endfor %}
+        </ul>
+
+        <div class="text-center mt-6">
+            <i data-feather="code" width="36" height="36" class="stroke-primary"></i>
+            <p class="text-primary">Are you a developer?</p>
+            <a href="developers.html" class="btn btn-rounded btn-primary">Review the specs</a>
+        </div>
+    </div>
+</section>

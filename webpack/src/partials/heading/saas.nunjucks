@@ -1,0 +1,27 @@
+<!-- ./Page header -->
+<header
+    class="header alter2-header section parallax image-background center-bottom cover overlay gradient gradient-purple-navy alpha-8 text-contrast"
+    style="background-image: url('public/img/bg/grid.jpg')">
+    {% include "~sections/dividers/waves.nunjucks" %}
+
+    <div class="container overflow-hidden">
+        <div class="row">
+            <div class="col-md-7">
+                <h1 class="text-contrast bold">Ultimate HTML template <span class="d-block light">for your awesome
+                        product</span></h1>
+                <p class="lead">Your amazing product deserves an outstanding way to show it. Dashcore will provide you
+                    with a quality template no matter what your idea is about.</p>
+
+                <nav class="nav mt-5">
+                    <a href="#" class="nav-link mr-3 btn btn btn-rounded btn-contrast">
+                        <i class="fas fa-tag mr-3"></i> Plans & pricing
+                    </a>
+
+                    <a href="#" class="nav-link btn btn-rounded btn-success">
+                        Start now
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

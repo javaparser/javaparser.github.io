@@ -1,0 +1,30 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Inline text elements</h2>
+            <p class="lead">Styling for common inline HTML5 elements.</p>
+        </div>
+
+        <table class="table table-borderless">
+            <thead>
+            <tr>
+                <th>Element</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for element in elements -%}
+                <tr>
+                    <td>
+                        <code>&lt;{{ element.tag }}&gt;&lt;/{{ element.tag }}&gt;</code>
+                        {% if element.class %}
+                        or <code>.{{ element.class }}</code>
+                        {% endif %}
+                    </td>
+                    <td><{{ element.tag }} {% if element.class %} class="{{ element.class }}" {% endif %}>{{ element.text | safe }}.</{{ element.tag }}></td>
+                </tr>
+            {%- endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>

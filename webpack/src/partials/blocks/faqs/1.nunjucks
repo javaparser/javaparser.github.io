@@ -1,0 +1,36 @@
+<!-- ./FAQs -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Do you have <span class="bold">questions?</span></h2>
+
+                <p class="lead">Not sure how this template can help you? Wonder why you need to buy our theme?</p>
+
+                <p class="text-muted">Here are the answers to some of the most common questions we hear from our
+                    appreciated customers</p>
+            </div>
+
+            <div class="col-md-8">
+                <div class="accordion accordion-clean" id="faqs-accordion">
+                    {% for faq in faqs %}
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <a href="#" class="card-title btn" data-toggle="collapse"
+                                data-target="#v1-q{{ loop.index }}">
+                                <i class="fas fa-angle-down angle"></i>
+                                {{ faq.question }}
+                            </a>
+                        </div>
+
+                        <div id="v1-q{{ loop.index }}" class="collapse {{ "show" if loop.index === 1 }}"
+                            data-parent="#faqs-accordion">
+                            <div class="card-body">{{ faq.answer | safe }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

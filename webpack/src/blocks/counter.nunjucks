@@ -1,0 +1,19 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "../blog/", components: "../components/", blocks: "../blocks/" } %}
+
+{% set page = {
+title: 'Counters',
+subtitle : "Animated text counter for everything number you want show off",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/counters/1.nunjucks" %}
+{% include "~blocks/counters/2.nunjucks" %}
+{% include "~blocks/counters/3.nunjucks" %}
+{% include "~blocks/counters/4.nunjucks" %}
+{% include "~blocks/counters/5.nunjucks" %}
+{% endblock %}

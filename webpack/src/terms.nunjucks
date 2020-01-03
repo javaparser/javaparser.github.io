@@ -1,0 +1,11 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+    {% include "~layout/navigation/clean-dark-link.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+    {% include "~sections/shared/terms.nunjucks" %}
+{% endblock %}

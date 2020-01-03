@@ -1,0 +1,41 @@
+<section class="blog-post" id="blog-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                {% include "~blog/post/_post.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container py-5 b-t b-2x">
+        {% include "~blog/post/_author.nunjucks" %}
+    </div>
+</section>
+
+<section>
+    <div class="container py-5 b-t">
+        {% include "~blog/post/_details.nunjucks" %}
+    </div>
+</section>
+
+<section class="post-comments bg-light b-t">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-lg-auto">
+                {% include "~blog/post/_comments.nunjucks" %}
+
+                <hr class="my-5">
+
+                {% include "~blog/post/_leave-comment.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light b-t">
+    <div class="container">
+        {% include "~blog/post/_recommended.nunjucks" %}
+    </div>
+</section>

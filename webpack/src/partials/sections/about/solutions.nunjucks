@@ -1,0 +1,53 @@
+<!-- ./Dashboard Included -->
+<section class="section bg-light edge top-left">
+    <div class="container bring-to-front">
+        <div class="section-heading text-center">
+            <h2>A solution for every need</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam atque dicta
+                dignissimos eius excepturi fuga laudantium libero nam nihil, obcaecati pariatur quaerat quam, quia
+                quisquam repudiandae sed tenetur veniam!</p>
+        </div>
+
+        <div class="row align-items-center gap-y">
+            <div class="col-md-6 col-lg-5 text-center text-md-left">
+                {% set features = [
+                { icon : "box", title: "Full Code", description: "DashCore comes with fully documented HTML, SASS, JS, PHP code, all in a well organized and structured way." },
+                { icon : "settings", title: "Free Updates", description: "You'll get lifetime free updates as we improve or add new features." },
+                { icon : "award", title: "Premium Support", description: "In case you need it, We got you covered, with our premium quality fast support service." }
+                ] %}
+
+                <ul class="list-unstyled">
+                    {% for f in features %}
+                    <li class="media d-block d-lg-flex">
+                        <i data-feather="{{ f.icon }}" width="36" height="36"
+                            class="stroke-primary mr-3 text-lg-right"></i>
+                        <div class="media-body mt-3 mt-lg-0 text-center text-md-left">
+                            <h5 class="bold text-darker">{{ f.title }}</h5>
+                            <p class="mt-0 {{ "mb-5" if loop.index < loop.length }}">{{ f.description }}</p>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-5 ml-md-auto">
+                <div class="shadow card">
+                    <div class="card-header overlay gradient gradient-blue-purple alpha-5 image-background cover"
+                        style="background-image: url(./public/img/screens/dash/4.png)">
+                        <div class="content">
+                            <h2 class="mt-9 text-contrast light">Dashboard Included</h2>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <p>Our template is packed with a <span class="bold">Starter Admin Dashboard</span> to help you
+                            get started right away with your project. You'll have not a beautiful HTML template to
+                            promote your product but a starting point admin template</p>
+
+                        <a href="admin/" class="btn btn-primary btn-rounded mt-4">Try the Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

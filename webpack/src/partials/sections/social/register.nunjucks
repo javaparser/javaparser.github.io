@@ -1,0 +1,20 @@
+<!-- Register -->
+<section class="section overflow-hidden">
+    <div class="container pt-4 bring-to-front">
+        <div class="row">
+            <div class="col-md-10 mx-md-auto">
+                <form action="srv/register.php" class="form" data-response-message-animation="slide-in-left"
+                    novalidate="novalidate">
+                    <div class="input-group-register py-4">
+                        <input type="email" name="Subscribe[email]"
+                            class="form-control shadow-lg bg-contrast form-control-rounded"
+                            placeholder="Enter your email" required="">
+                        <button class="btn btn-rounded btn-primary btn-lg" type="submit">Register</button>
+                    </div>
+                </form>
+
+                {% include "~sections/form/register-response.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

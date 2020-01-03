@@ -1,0 +1,17 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Forms',
+subtitle : "Pick from multiple forms to provide your users interaction with you no matter their regards",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/forms/register-input-group.nunjucks" %}
+{% include "~blocks/forms/register-trial.nunjucks" %}
+{% include "~blocks/forms/support.nunjucks" %}
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+{% set main = { class: "position-relative overflow-hidden" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% set page = {
+        title: 'About DashCore',
+        subtitle : "DashCore is an all included HTML template, it's packed with a admin dashboard template to help you get started with your project.",
+        class: 'gradient gradient-purple-blue'
+    } %}
+{% include "~heading/page-wave.nunjucks" %}
+
+{% include "~sections/about/overview.nunjucks" %}
+{% include "~sections/about/video.nunjucks" %}
+{% include "~sections/about/solutions.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left" } %}
+{% include "~blocks/counters/4.nunjucks" %}
+
+{% include "~sections/about/features-boxes.nunjucks" %}
+{% include "~sections/about/customers.nunjucks" %}
+{% include "~sections/about/team.nunjucks" %}
+
+{% set section = { class: "bg-light", title: "They trust us" } %}
+{% include "~sections/shared/brands-using.nunjucks" %}
+
+{% include "~sections/shared/join-developer-designer.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left b-b" } %}
+{% include "~blocks/forms/register-input-group.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { container: { class: "pb-3" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

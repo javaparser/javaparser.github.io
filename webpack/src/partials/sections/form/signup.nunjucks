@@ -1,0 +1,38 @@
+<form action="srv/signup.php" method="post" class="form-signup" name="form-signup"
+    data-response-message-animation="slide-in-up">
+    <div class="form-group">
+        <label for="signup_username" class="bold mb-0">User name</label>
+        <input type="text" name="Signup[username]" id="signup_username" class="form-control"
+            placeholder="Enter your desired user name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="signup_email" class="bold mb-0">Email address</label>
+        <small id="emailHelp" class="form-text text-secondary mt-0 mb-2 italic"><i class="fas fa-info-circle icon"></i>
+            We'll never share your email with anyone else.</small>
+        <input type="email" name="Signup[email]" id="signup_email" class="form-control"
+            placeholder="Valid email address" required>
+
+    </div>
+
+    <div class="form-group">
+        <label for="signup_password" class="bold mb-0">Password</label>
+        <input type="password" name="Signup[password]" id="signup_password" class="form-control" placeholder="Password"
+            required>
+    </div>
+
+    <div class="form-group">
+        <button id="signup-submit" data-loading-text="Signing up..." name="submit" type="submit"
+            class="btn btn-rounded btn-primary mt-4">
+            Create account
+        </button>
+
+        <hr>
+        <p class="small">
+            By clicking this button you agree our <a href="#" class="dotted">Privacy Policy</a> &nbsp;&amp;&nbsp; <a
+                href="#" class="dotted">Terms Of Service</a>
+        </p>
+    </div>
+</form>
+
+{% include "~sections/form/signup-response.nunjucks" %}

@@ -1,0 +1,38 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Sizes</h2>
+            <p class="lead">Fancy larger or smaller buttons? Add <code>.btn-xs</code>, <code>.btn-sm</code>,
+                <code>.btn-md</code>, <code>.btn-lg</code> or <code>.btn-xl</code> for additional sizes.</p>
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Solid</p>
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            {% for size in buttons.sizes -%}
+            <button type="button" class="btn btn-{{ size }} btn-primary">btn-{{ size }}</button>
+            {%- endfor %}
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Outline</p>
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            {% for size in buttons.sizes -%}
+            <button type="button" class="btn btn-{{ size }} btn-outline-primary">btn-{{ size }}</button>
+            {%- endfor %}
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Rounded</p>
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            {% for size in buttons.sizes -%}
+            <button type="button" class="btn btn-rounded btn-{{ size }} btn-primary">btn-{{ size }}</button>
+            {%- endfor %}
+        </div>
+
+        <p class="b-b pb-2 mb-5 text-secondary">Circle</p>
+        <div class="d-flex flex-wrap justify-content-around align-items-center">
+            {% for size in buttons.sizes -%}
+            <button type="button" class="btn btn-circle btn-{{ size }} btn-outline-primary"><i
+                    class="far fa-comments"></i></button>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

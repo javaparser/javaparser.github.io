@@ -1,0 +1,17 @@
+<!-- ./CTA - Get it Now -->
+<section class="gradient gradient-blue-purple overlay alpha-8 text-contrast text-center">
+    <div class="container">
+        <div class="section-heading">
+            <p class="badge badge-outline-contrast bold rounded-pill py-2 px-4">Wait no more...</p>
+            <h2 class="text-contrast">Get <span class="bold">DashCore</span> NOW!</h2>
+            <p class="op-8">Thinking about boost your website? but, you want a template to fit all you need, just hit
+                the buy button and you're all set</p>
+        </div>
+
+        <p class="handwritten highlight font-md mb-4">Don't wait</p>
+        <a class="btn btn-contrast btn-rounded" href="https://5studios.net/themes/dashcore">
+            Buy it at themeforest.net
+            <i class="fas fa-long-arrow-alt-right ml-3"></i>
+        </a>
+    </div>
+</section>

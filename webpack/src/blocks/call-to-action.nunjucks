@@ -1,0 +1,19 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Call to Action',
+subtitle : "Encourage consumers to take prompt actions by using advertising messages.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/cta/1.nunjucks" %}
+{% include "~blocks/cta/2.nunjucks" %}
+{% include "~blocks/cta/3.nunjucks" %}
+{% include "~blocks/cta/4.nunjucks" %}
+{% include "~blocks/cta/5.nunjucks" %}
+{% endblock %}

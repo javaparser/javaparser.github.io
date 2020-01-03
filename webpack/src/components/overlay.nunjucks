@@ -1,0 +1,31 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+    title: 'Overlay',
+    subtitle : "An overlay is an alpha layer that is superimposed as a top layer over the content being overlayed.",
+    class: 'gradient gradient-purple-blue'
+} %}
+
+{% set overlays = [
+    { name: 'primary', color: 'contrast' },
+    { name: 'secondary', color: 'contrast' },
+    { name: 'success', color: 'contrast' },
+    { name: 'danger', color: 'contrast' },
+    { name: 'warning', color: 'contrast' },
+    { name: 'info', color: 'contrast' },
+    { name: 'light', color: 'dark' },
+    { name: 'dark', color: 'contrast' },
+    { name: 'link', color: 'contrast' },
+
+    { name: 'alternate', color: 'contrast' },
+    { name: 'contrast', color: 'dark' },
+    { name: 'darker', color: 'contrast' },
+    { name: 'black', color: 'contrast' }
+] %}
+
+{% block main %}
+{% include "~components/overlay/default.nunjucks" %}
+{% include "~components/overlay/gradients.nunjucks" %}
+{% endblock %}

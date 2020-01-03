@@ -1,0 +1,22 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% block content %}
+<div class="container">
+    <div class="fullscreen-md d-flex justify-content-center align-items-center">
+        <div class="content">
+            <h2 class="display-4 display-md-3 text-contrast mt-4 mt-md-0">Important!</h2>
+            <p class="lead text-contrast alpha-5">The Angular app is located under the <span class="bold">angular</span>
+                folder</p>
+            <p>Please follow the following instructions to get it up and running</p>
+
+            <ul class="list-unstyled">
+                <li>Run <code>npm install</code>. This will install all the libraries and dependencies used to build the
+                    app.</li>
+                <li>Run <code>npm run start</code>. This will start a development server with the configuration in
+                    <code>angular.json</code></li>
+                <li>Using your favorite browser go to <a href="localhost:4200">localhost:4200</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

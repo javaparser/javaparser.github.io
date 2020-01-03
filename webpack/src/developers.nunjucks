@@ -1,0 +1,34 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/developers.nunjucks" %}
+
+{% include "~sections/shared/ribbon/learn-more.nunjucks" %}
+{% include "~sections/shared/integration-api.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge bottom-right" } %}
+{% include "~blocks/counters/1.nunjucks" %}
+
+{% include "~sections/shared/bring-to-life.nunjucks" %}
+{% include "~sections/shared/developers.nunjucks" %}
+{% include "~sections/integrations/colored-cards.nunjucks" %}
+
+{% set section = { title: "They trust us... would you?", class: "bg-light" } %}
+{% include "~sections/shared/brands-using.nunjucks" %}
+
+{% include "~sections/shared/join-developer-designer.nunjucks" %}
+
+{% set section = { class: "bg-contrast edge top-left b-b", container: { class: "pt-5" } } %}
+{% include "~blocks/cta/1.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { container: { class: "pb-3" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

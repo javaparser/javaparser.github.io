@@ -1,0 +1,31 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+    {% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+    {% include "~heading/startup.nunjucks" %}
+
+    {% set vars = { section: { class: "edge bottom-right bg-contrast" }, icon: { class: "text-info mb-2" }, text: { class: "text-secondary" } } %}
+    {% include "~sections/shared/features.nunjucks" %}
+
+    {% include "~sections/shared/bring-to-life.nunjucks" %}
+    {% include "~sections/shared/engage.nunjucks" %}
+    {% include "~sections/shared/how-to/video-cards.nunjucks" %}
+
+    {% set section = { class: "bg-light" } %}
+    {% include "~sections/shared/brands-using.nunjucks" %}
+
+    {% include "~sections/shared/join-developer-designer.nunjucks" %}
+
+    {% set section = { class: "bg-contrast edge top-left b-b", container: { class: "pt-5" } } %}
+    {% include "~blocks/cta/1.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+    {% set demo = { container: { class: "pb-3" } } %}
+    {% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

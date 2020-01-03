@@ -1,0 +1,19 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Footers',
+subtitle : "A line of information placed at the end of a page for purposes of identification."
+} %}
+
+{% set demo = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/footers/5cols.nunjucks" %}
+{% include "~blocks/footers/stay-in-touch.nunjucks" %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% include "~blocks/footers/simple-3cols.nunjucks" %}
+{% include "~blocks/footers/yalp.nunjucks" %}
+{% include "~blocks/footers/next.nunjucks" %}
+{% endblock %}

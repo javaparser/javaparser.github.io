@@ -1,0 +1,20 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Paragraph</h2>
+            <p class="lead">Multiple options for styling your paragraphs text.</p>
+        </div>
+
+        <p class="b-b pb-2 mb-4 text-secondary">Default</p>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+        </p>
+
+        <p class="b-b pb-2 my-4 text-secondary">Lead</p>
+        <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+            commodo luctus.</p>
+
+        <p class="b-b pb-2 my-4 text-secondary">Small</p>
+        <p class="small">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non
+            commodo luctus.</p>
+    </div>
+</section>

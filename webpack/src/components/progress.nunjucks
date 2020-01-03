@@ -1,0 +1,25 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Progress',
+subtitle : "Progress elements to be used in multiple creative ways.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set bars = [
+    { value: 0, size: 'progress-sl', style: 'progress-3' },
+    { value: 25, size: 'progress-ty', style: 'progress-danger' },
+    { value: 50, size: 'progress-xs', style: 'progress-4' },
+    { value: 75, size: 'progress-sm', style: 'progress-warning' },
+    { value: 100, size: 'progress-md', style: 'progress-success' }
+] %}
+
+{% block main %}
+{% include "~components/progress/1.nunjucks" %}
+{% include "~components/progress/2.nunjucks" %}
+{% include "~components/progress/3.nunjucks" %}
+{% include "~components/progress/4.nunjucks" %}
+{% include "~components/progress/5.nunjucks" %}
+{% endblock %}

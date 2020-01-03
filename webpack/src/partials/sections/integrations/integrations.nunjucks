@@ -1,0 +1,37 @@
+<!-- ./Integrations -->
+<section class="section">
+    <div class="container bring-to-front">
+        <div class="row gap-y align-items-center text-center text-lg-left">
+            <div class="col-12 col-md-6 col-lg-5 order-md-2 ml-md-auto text-center text-md-left">
+                <img class="icon icon-lg" src="./public/img/svg/tools.svg" alt="">
+
+                <h2 class="mt-4">Easy Integrations</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut autem eum laudantium quas
+                    recusandae repellendus voluptate.</p>
+
+                <a href="#" class="btn btn-primary btn-rounded mt-4">Get started</a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-5">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-around">
+                    {% set images = [
+                    { image: 1, margin: 6, aos: "fade-right"},
+                    { image: 2, margin: 4, aos: "fade-down-right"},
+                    { image: 3, margin: 5, aos: "fade-up-right"},
+                    { image: 4, margin: 6, aos: "fade-up"},
+                    { image: 5, margin: 4, aos: "fade-down-left"},
+                    { image: 6, margin: 6, aos: "fade-up-left"},
+                    { image: 7, margin: 4, aos: "fade-left"}
+                    ] %}
+                    {% for i in images -%}
+                    <li data-aos-easing="ease-in-out-cubic" data-aos="{{ i.aos }}"
+                        data-aos-delay="{{ (i.image-1) * 100 }}"
+                        class="shadow-box bg-contrast rounded-circle icon-xxl image-background contain mr-4 mt-{{ i.margin }}"
+                        style="background-image: url(./public/img/svg/developer/{{ i.image }}.svg)">
+                    </li>
+                    {%- endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

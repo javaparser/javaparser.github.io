@@ -1,0 +1,12 @@
+<!-- ./CookieLaw - Custom CSS -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Custom CSS</h2>
+            <p class="lead">Override default styles with slightly crazy custom CSS.</p>
+        </div>
+
+        <ul class="example-selector example-selector-custom-css"></ul>
+    </div>
+</section>
+

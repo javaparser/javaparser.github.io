@@ -1,0 +1,13 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Descriptive features',
+subtitle : "...",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+
+{% endblock %}

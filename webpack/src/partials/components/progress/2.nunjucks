@@ -1,0 +1,18 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2>Size</h2>
+            <p class="lead">Multiple size options.</p>
+        </div>
+
+        <div class="row gap-y">
+            <div class="col-md-8 mx-auto">
+                {% for bar in bars -%}
+                    <div class="progress {{ bar.size }} {{ "mt-3" if loop.index <= loop.length }}">
+                        <div class="progress-bar" style="width: {{ bar.value }}%"></div>
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+</section>

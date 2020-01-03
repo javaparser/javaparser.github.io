@@ -1,0 +1,23 @@
+<!-- ./Page header -->
+<header class="page header text-contrast overlay alpha-8 image-background cover {{ page.class }}"
+    style="background-image: url('{{ baseUrl.img }}/bg/waves.jpg')">
+    {% include "~sections/dividers/waves.nunjucks" %}
+
+    <div class="container {{ page.container.class }}" style="{{ page.container.style }}">
+        {% if page.row == 12 %}
+        <h1 class="regular display-4 text-contrast {{ "mb-4" if page.subtitle }}">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <p class="lead text-contrast">{{ page.subtitle | safe }}</p>
+        {% endif %}
+        {% else %}
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="regular display-4 text-contrast {{ "mb-4" if page.subtitle }}">{{ page.title }}</h1>
+                {% if page.subtitle %}
+                <p class="lead text-contrast">{{ page.subtitle | safe }}</p>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</header>

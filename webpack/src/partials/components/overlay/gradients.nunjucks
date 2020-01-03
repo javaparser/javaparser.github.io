@@ -1,0 +1,26 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Gradients</h2>
+            <p class="lead">You can opt to use gradients overlay by adding <code>.gradient</code> to any element.</p>
+        </div>
+
+        <p class="small text-center bold">Using <code>.gradient-blue-purple</code></p>
+        <p class="text-secondary small text-center">View all gradient variations <a href="color.html#colors-gradient"
+                target="_blank">here</a></p>
+        <div class="row gap-y">
+            {% for a in range(1, 10) -%}
+            <div class="col-md-4">
+                <div class="shadow-box image-background cover overlay gradient gradient-blue-purple alpha-{{ a }}"
+                    style="background-image: url(https://picsum.photos/350/200/?random)">
+                    <div class="content px-3 py-6">
+                        <h6 class="text-contrast text-center">Overlay text</h6>
+                    </div>
+                </div>
+                <p class="text-center mt-3"><code>.alpha-{{ a }}</code></p>
+            </div>
+            {%- endfor %}
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<!-- ./FAQs -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row gap-y">
+            <div class="col-lg-8 b-md-l order-lg-2">
+                <h3 class="light">Common Questions</h3>
+                <hr class="mb-4">
+
+                <div class="accordion accordion-clean" id="faqs-accordion">
+                    {% for faq in faqs %}
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <a href="#" class="card-title btn" data-toggle="collapse"
+                                data-target="#v1-q{{ loop.index }}"><i
+                                    class="fas fa-angle-down angle"></i>{{ faq.question }}</a>
+                        </div>
+
+                        <div id="v1-q{{ loop.index }}" class="collapse" data-parent="#faqs-accordion">
+                            <div class="card-body">{{ faq.answer | safe }}</div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                {% include "~sections/faqs/_sidebar.nunjucks" %}
+            </div>
+        </div>
+    </div>
+</section>

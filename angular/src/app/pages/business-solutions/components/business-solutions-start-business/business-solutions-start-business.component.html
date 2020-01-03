@@ -1,0 +1,41 @@
+<section class="section quick-start-your-business">
+  <div class="container-fluid bring-to-front pb-md-10">
+    <div class="row gap-y align-items-center">
+      <div class="col-10 col-lg-4 mx-auto order-md-2">
+        <div class="mb-5 text-center text-lg-left">
+          <h2>
+            Quick start your business <br />
+            <span class="text-primary">with the right tools</span>
+          </h2>
+
+          <p class="lead text-muted">
+            DashCore helps you Build a modern & beautiful web presence. Our growing set of components will make your
+            life waaaay easier.
+          </p>
+        </div>
+
+        <ul class="list-unstyled">
+          <li class="py-2" *ngFor="let feature of features">
+            <div class="d-flex align-items-center">
+              <div class="icon-md bg-primary p-2 rounded-circle center-flex mr-3">
+                <dc-feather [name]="feature.icon" [size]="16" [iconClass]="'stroke-contrast'"></dc-feather>
+              </div>
+
+              <p class="my-0">{{ feature.title }}</p>
+            </div>
+          </li>
+        </ul>
+
+        <a href="#!" class="btn btn-primary btn-rounded mt-4">Know More</a>
+      </div>
+
+      <div class="col-12 col-lg-6 pl-0 order-md-1">
+        <div class="browser shadow" data-aos="fade-right">
+          <div class="screen">
+            <img src="assets/img/screens/dash/1.png" alt="" class="img-responsive" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

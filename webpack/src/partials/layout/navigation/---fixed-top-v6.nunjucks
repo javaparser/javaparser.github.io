@@ -1,0 +1,5 @@
+<!-- ./Main Navigation -->
+<nav class="navbar navbar-expand-md main-nav navigation fixed-top sidebar-left">
+    {% set section = { useOnlyDarkLogo: true } %}
+    {% include "~layout/navigation/_main.nunjucks" %}
+</nav>

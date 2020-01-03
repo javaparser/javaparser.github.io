@@ -1,0 +1,24 @@
+<!-- ./Lightweight HTML - Big screen right -->
+<section class="section">
+    <div class="container-wide">
+        <div class="row gap-y align-items-center text-center text-lg-left">
+            <div class="col-10 col-lg-4 mx-auto">
+                <h2>Lightweight HTML template great for your product</h2>
+
+                <p class="lead text-secondary">Suspendisse dignissim lorem vel elit dapibus mattis. Etiam magna nunc,
+                    maximus bibendum diam et, porttitor.</p>
+
+                <p>Vivamus ut mauris vel orci ornare hendrerit. Pellentesque eu enim ipsum. In mauris tellus, gravida
+                    nec euismod et, egestas et tortor. Sed ante ipsum, scelerisque vel enim eu, facilisis consectetur
+                    elit. </p>
+
+                <a href="#" class="btn btn-info btn-rounded mt-4">Learn More</a>
+            </div>
+
+            <div class="col-12 col-lg-6 pr-0">
+                <img src="./public/img/screens/dash/2.png" alt="" class="img-responsive shadow"
+                    data-aos="fade-left">
+            </div>
+        </div>
+    </div>
+</section>

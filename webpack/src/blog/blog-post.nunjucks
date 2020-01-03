@@ -1,0 +1,17 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/fixed-top.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~blog/heading/fullscreen.nunjucks" %}
+
+{% include "~blog/post.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% include "~demo/layout/footer.nunjucks" %}
+{% endblock %}

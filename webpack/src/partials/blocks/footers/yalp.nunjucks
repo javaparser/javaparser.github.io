@@ -1,0 +1,25 @@
+<!-- ./Footer - Headline -->
+<footer class="site-footer section bg-darker text-contrast text-center {{ demo.class }}">
+    <div class="container {{ demo.container.class }}">
+        <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo-light.png" alt="" class="logo">
+
+        <p class="lead mt-5">Don't wait - <span class="bold">Get Dashcore</span> now!</p>
+
+        <p class="copyright my-5">
+            © 2018 Dashcore, <em>by</em> <a class="brand bold" href="http://www.5studios.net">5Studios.net</a>
+        </p>
+
+        <hr class="mt-5 bg-secondary op-5">
+        <nav class="nav social-icons justify-content-center mt-4">
+            <a href="#" class="btn text-contrast btn-circle btn-sm brand-facebook mr-3"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="#" class="btn text-contrast btn-circle btn-sm brand-twitter mr-3"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="#" class="btn text-contrast btn-circle btn-sm brand-google mr-3"><i
+                    class="fab fa-google-plus"></i></a>
+            <a href="#" class="btn text-contrast btn-circle btn-sm brand-youtube mr-3"><i
+                    class="fab fa-youtube"></i></a>
+            <a href="#" class="btn text-contrast btn-circle btn-sm brand-pinterest"><i class="fab fa-pinterest"></i></a>
+        </nav>
+    </div>
+</footer>

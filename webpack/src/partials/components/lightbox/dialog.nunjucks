@@ -1,0 +1,34 @@
+<!-- ./Lightbox - Dialog -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Dialog with CSS animation</h2>
+            <p class="lead">Animations are added with simple CSS transitions, you can make them look however you wish.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+                <p>Open dialog with animation</p>
+                {% set effects = ['zoom-in', 'newspaper', 'move-horizontal', 'move-from-top', '3d-unfold', 'zoom-out'] %}
+
+                <nav class="nav justify-content-center">
+                    {% for e in effects %}
+                    <a class="nav-item nav-link modal-popup" href="#modal-dialog" data-effect="mfp-{{ e }}"><span
+                            class="text-primary italic">{{ e }}</span></a>
+                    {% endfor %}
+                </nav>
+
+                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                <div id="modal-dialog" class="section mfp-with-anim mfp-hide popup-wrapper bg-contrast">
+                    <div class="container">
+                        <h2>Dialog example</h2>
+                        <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate
+                            the look and feel of finished, typeset text. Only for show. He who searches for meaning here
+                            will be sorely disappointed.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

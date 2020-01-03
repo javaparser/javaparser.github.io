@@ -1,0 +1,30 @@
+<!-- ./Testimonial - Right -->
+<section class="section singl-testimonial">
+    <div class="shape-wrapper">
+        <img src="./public/img/shps/abs-shp-1.svg" class="absolute top right" alt="...">
+    </div>
+
+    <div class="container pt-8">
+        <div class="row gap-y align-items-center">
+            <div class="col-md-6 order-md-2">
+                <figure class="testimonial-img mx-auto">
+                    <img src="./public/img/bg/trendhim_triple_650px.png"
+                        class="img-responsive rounded shadow-lg" alt="...">
+                </figure>
+            </div>
+
+            <div class="col-md-5 mr-md-auto">
+                <blockquote class="regular lead text-secondary py-4">
+                    <i class="quote fas fa-quote-left"></i>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum deleniti repellat omnis numquam,
+                    voluptatum enim, sunt id minus quisquam animi sequi maxime est reiciendis pariatur delectus quis
+                    optio eius nostrum?
+                </blockquote>
+                <hr class="my-4 w-50">
+                <div class="small text-secondary">
+                    <span class="bold d-block text-darker">Sebastian Petersen,</span> Partner hos Trendhim.dk
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

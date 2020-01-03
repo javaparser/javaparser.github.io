@@ -1,0 +1,10 @@
+<form action="srv/register.php" class="form" data-response-message-animation="slide-in-left">
+    <div class="input-group">
+        <input type="email" name="Subscribe[email]" class="form-control rounded-circle-left" placeholder="Enter your email" required>
+        <div class="input-group-append">
+            <button class="btn btn-rounded {{ vars.button.class }}" type="submit">Register</button>
+        </div>
+    </div>
+</form>
+
+{% include "~sections/form/register-response.nunjucks" %}

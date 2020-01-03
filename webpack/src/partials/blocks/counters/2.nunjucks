@@ -1,0 +1,22 @@
+<!-- ./Counters -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row gap-y">
+            {% set counters = [
+            { icon : "box", value: 273, title: "Components" },
+            { icon : "download-cloud", value: 654, title: "Downloads" },
+            { icon : "settings", value: 7941, title: "Followers" },
+            { icon : "award", value: 654, title: "New users" }
+            ] %}
+            {% for c in counters %}
+            <div class="col-6 col-md-3">
+                <div class="d-flex align-items-center">
+                    <i data-feather="{{ c.icon }}" class="stroke-primary mr-2" width="36" height="36"></i>
+                    <span class="counter bold text-darker font-md">{{ c.value }}</span>
+                </div>
+                <p class="text-secondary m-0">{{ c.title }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

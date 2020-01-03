@@ -1,0 +1,36 @@
+{% set elements = [
+{ title: "Inbox", description: "Donec id elit non mi porta gravida at eget metus.", img: "1" },
+{ title: "Calendar", description: "Donec id elit non mi porta gravida at eget metus.", img: "2" },
+{ title: "Invoice", description: "Donec id elit non mi porta gravida at eget metus.", img: "3" },
+{ title: "Dashboard", description: "Donec id elit non mi porta gravida at eget metus.", img: "4" }
+] %}
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row align-items-center">
+            <div class="col-md-5 mr-md-auto">
+                <nav id="sw-nav-solid" class="nav flex-md-column nav-pills nav-fill">
+                    {% for element in elements %}
+                    <a class="nav-item text-left nav-link py-3 my-2 {{ "active" if loop.index === 1 }}"
+                        href="javascript:;" data-step="{{ loop.index }}">
+                        <h6 class="bold">{{ element.title }}</h6>
+                        <p class="my-0 d-none d-md-block">{{ element.description }}</p>
+                    </a>
+                    {% endfor %}
+                </nav>
+            </div>
+
+            <div class="col-md-6">
+                <div class="swiper-container mt-4 mt-md-0" data-sw-navigation="#sw-nav-solid">
+                    <div class="swiper-wrapper">
+                        {% for element in elements %}
+                        <div class="swiper-slide">
+                            <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/screens/dash/{{ element.img }}.png"
+                                class="img-responsive" alt="">
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

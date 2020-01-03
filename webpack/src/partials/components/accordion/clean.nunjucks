@@ -1,0 +1,27 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Accordion Clean</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <div class="accordion accordion-clean" id="accordion-light">
+                    {% for panel in panels -%}
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <a href="#" class="card-title btn" data-toggle="collapse"
+                                data-target="#lgt-q{{ loop.index }}"><i
+                                    class="fas fa-angle-down angle"></i>{{ panel.question }}</a>
+                        </div>
+
+                        <div id="lgt-q{{ loop.index }}" class="collapse" data-parent="#accordion-light">
+                            <div class="card-body">{{ panel.answer | safe }}</div>
+                        </div>
+                    </div>
+                    {%- endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+<!-- ./Slider - Secondary navigation element -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="section-heading text-center">
+            <h2 class="font-md">Secondary navigation element</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="swiper-container" data-sw-pagination="false" data-sw-nav-arrows="false" data-sw-navigation="#sw-nav-1" data-sw-navigation-active="icon-lg" data-sw-active-selector="img">
+                    <div class="swiper-wrapper">
+                        {% for gr in gravities %}
+                            <div class="swiper-slide">
+                                <img src="https://picsum.photos/540/360/?random&gravity={{ gr }}" alt="" class="img-responsive">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <nav id="sw-nav-1" class="nav nav-circle mt-4 align-items-center">
+                    {% for gr in gravities %}
+                        <a class="nav-item nav-link" href="#" data-step="{{ loop.index }}">
+                            <img src="https://picsum.photos/540/360/?random&gravity={{ gr }}" alt="" class="rounded-circle shadow {{ "icon-lg" if loop.index == 1 }} icon-md mr-0">
+                        </a>
+                    {% endfor %}
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

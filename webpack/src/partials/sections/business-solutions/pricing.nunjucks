@@ -1,0 +1,138 @@
+{% set plans = [{
+    icon : "box",
+    plan: {
+        name: "Standard",
+        price: { monthly: 0.99, yearly: 0.78 },
+        description: "Everything you can get from a professional solution to keep your business on its way to success"
+    },
+    features: [{
+        name: "Lorem ipsum dolor sit amet ipsa",
+        icon: "box"
+    }, {
+        name: "Ab architecto blanditiis consectetur",
+        icon: "airplay"
+    }, {
+        name: "Blanditiis dignissimos ipsa ipsam odio",
+        icon: "lock"
+    }, {
+        name: "Dolorem ducimus ea earum ipsam laborum",
+        icon: "repeat"
+    }]
+}] %}
+<!-- Pricing -->
+<section class="bg-light edge top-left">
+    <div class="container bring-to-front pb-0 pt-3">
+        <div class="section-heading">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8 text-center">
+                    <h2>Affordable pricing plans.</h2>
+
+                    <p class="lead text-muted">
+                        Because every company is different, DashCore comes with multiple licensing plans that fit your needs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <div class="btn-group btn-group-toggle pricing-table-basis" data-toggle="buttons">
+                    <label class="btn btn-info active">
+                        <input type="radio" name="pricing-value" value="monthly" autocomplete="off" checked> Monthly basis
+                    </label>
+                    <label class="btn btn-info">
+                        <input type="radio" name="pricing-value" value="yearly" autocomplete="off"> Annual basis
+                    </label>
+                </div>
+                <p>(Save up to 30% off on annual plans)</p>
+            </div>
+        </div>
+
+        <div class="row align-items-center no-gutters">
+            {% for plan in plans %}
+                <div class="col-md-{{ 12 / (plans.length + 1) }}" style="z-index: 1">
+                    <div class="card border-0 rounded-lg shadow-lg mb-4 mb-md-0" data-aos="fade-up">
+                        <div class="card-body py-4">
+                            <div class="row">
+                                <div class="col-xl-9 mx-auto">
+                                    <div class="pricing text-center mb-5">
+                                        <h5 class="bold text-uppercase text-primary">{{ plan.plan.name }}</h5>
+                                        <hr class="my-4">
+
+                                        <p>{{ plan.plan.description }}</p>
+
+                                        <div class="pricing-value">
+                                            <span class="price display-lg-4 semibold odometer text-dark" data-monthly-price="{{ plan.plan.price.monthly }}" data-yearly-price="{{ plan.plan.price.yearly }}">
+                                                {{ plan.plan.price.monthly }}
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <ul class="list-unstyled">
+                                        {% for feature in plan.features %}
+                                            <li>
+                                                <div class="media align-items-center mb-3">
+                                                    <div class="icon-md bg-success p-2 rounded-circle center-flex mr-3">
+                                                        <i data-feather="{{ feature.icon }}" class="stroke-contrast"></i>
+                                                    </div>
+
+                                                    <div class="media-body">
+                                                        {{ feature.name }}
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#!" class="btn btn-primary btn-lg btn-block rounded-top-0 rounded-bottom py-4">
+                            Get it now
+                            <i data-feather="arrow-right" class="ml-3"></i>
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <div class="col-md-{{ 12 / (plans.length + 1) }} ml-md-n3">
+                <div class="card border-0 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-body py-4">
+                        <div class="row">
+                            <div class="col-xl-10 mx-auto">
+                                <div class="text-center">
+                                    <h5 class="bold text-uppercase">Custom</h5>
+                                    <hr class="my-4">
+
+                                    <p class="lead bold">Need a custom design?</p>
+
+                                    <p class="text-muted">We offer more than an Enterprise solution, contact us now and request a custom build for your business.</p>
+
+                                    <div class="row no-gutters">
+                                        {% set xtras = [
+                                            { icon: "dollar-sign", title: "Large Sales Volume", border: "right" },
+                                            { icon: "bell", title: "Custom Feature" },
+                                            { icon: "activity", title: "Important Feature", border: "right" },
+                                            { icon: "box", title: "Unique Feature" }
+                                        ] %}
+                                        {% for xtra in xtras %}
+                                            <div class="col-6 border-{{ xtra.border }}{{ " border-top" if loop.index > 2 }}">
+                                                <div class="text-center p-3">
+                                                    <i data-feather="{{ xtra.icon }}" width="32" height="32" class="stroke-primary"></i>
+                                                    <p class="mb-0">{{ xtra.title }}</p>
+                                                </div>
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#!" class="btn btn-light btn-lg btn-block rounded-top-0 rounded-bottom py-4">
+                        Contact us
+                        <i data-feather="arrow-right" class="ml-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

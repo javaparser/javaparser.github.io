@@ -1,0 +1,25 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Headings</h2>
+            <p class="lead">All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h1&gt;</code>, are available.</p>
+        </div>
+
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>Heading</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for i in range(1, 7) -%}
+                <tr>
+                    <td><code>&lt;h{{ i }}&gt;&lt;/h{{ i }}&gt;</code></td>
+                    <td><span class="h{{ i }}">h{{ i }}. Bootstrap heading</span></td>
+                </tr>
+            {%- endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>

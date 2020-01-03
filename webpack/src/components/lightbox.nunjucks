@@ -1,0 +1,18 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Ligbox and Dialog',
+subtitle : "Magnific Popup is a responsive lightbox & dialog script with focus on performance and providing best experience for user with any device",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+{% include "~components/lightbox/single-image.nunjucks" %}
+{% include "~components/lightbox/gallery.nunjucks" %}
+{% include "~components/lightbox/video.nunjucks" %}
+{% include "~components/lightbox/dialog.nunjucks" %}
+{% include "~components/lightbox/form.nunjucks" %}
+{% include "~components/lightbox/ajax.nunjucks" %}
+{% endblock %}

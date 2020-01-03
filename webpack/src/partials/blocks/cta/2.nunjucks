@@ -1,0 +1,11 @@
+<!-- ./CTA - Start Now -->
+<section class="section {{ section.class }}">
+    <div class="container bring-to-front {{ section.container.class }}">
+        <div class="shadow rounded text-center bg-info-gradient text-contrast p-5">
+            <h2 class="mb-5 text-contrast">Try Dashcore now.... love it forever</h2>
+            <p class="handwritten highlight font-md">Why wait? Start now!</p>
+
+            <a href="{{ baseUrl.pages }}signup.html" class="btn btn-dark btn-rounded mt-4">Start now</a>
+        </div>
+    </div>
+</section>

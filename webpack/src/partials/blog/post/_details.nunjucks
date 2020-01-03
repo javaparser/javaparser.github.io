@@ -1,0 +1,26 @@
+<ul class="list-unstyled d-flex flex-wrap flex-row align-items-center">
+    <li class="mr-4"><i class="fas fa-tag text-secondary"></i></li>
+    <li><a href="#" class="badge badge-pill badge-outline-secondary mr-2">app</a></li>
+    <li><a href="#" class="badge badge-pill badge-outline-secondary mr-2">development</a></li>
+    <li><a href="#" class="badge badge-pill badge-outline-secondary mr-2">software</a></li>
+    <li><a href="#" class="badge badge-pill badge-outline-secondary">startup</a></li>
+</ul>
+
+<ul class="list-unstyled d-flex flex-wrap flex-row align-items-center">
+    <li class="mr-4"><i class="fas fa-bookmark text-secondary"></i></li>
+    <li>
+        <a href="#" class="btn btn-circle btn-sm brand-twitter mr-3">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="btn btn-circle btn-sm brand-facebook mr-3">
+            <i class="fab fa-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#" class="btn btn-circle btn-sm brand-google mr-3">
+            <i class="fab fa-google-plus"></i>
+        </a>
+    </li>
+</ul>

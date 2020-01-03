@@ -1,0 +1,294 @@
+<nav class="st-nav navbar main-nav navigation fixed-top">
+    <div class="container">
+        <ul class="st-nav-menu nav navbar-nav">
+            <li class="st-nav-section nav-item">
+                <a href="#main" class="navbar-brand">
+                    <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo.png" alt="Dashcore"
+                        class="logo logo-sticky d-block d-md-none" />
+                </a>
+            </li>
+            <li class="st-nav-section st-nav-primary nav-item">
+                <a class="st-root-link item-products nav-link">
+                    Home
+                </a>
+
+                <a class="st-root-link item-products st-has-dropdown nav-link" data-dropdown="pages">
+                    Pages
+                </a>
+                <a class="st-root-link item-developers st-has-dropdown nav-link" data-dropdown="blocks">
+                    Blocks
+                </a>
+                <a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="components">
+                    UI Components
+                </a>
+                <a class="st-root-link item-company st-has-dropdown nav-link" data-dropdown="blog">
+                    Blog
+                </a>
+            </li>
+            <li class="st-nav-section st-nav-mobile nav-item">
+                <button class="st-root-link navbar-toggler" type="button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="st-popup">
+                    <div class="st-popup-container">
+                        <a class="st-popup-close-button">Close</a>
+                        <div class="st-dropdown-content-group">
+                            <h4 class="text-uppercase regular">Pages</h4>
+
+                            {% set options = [
+                                { page: "about", name: "About", icon: "far fa-building", color: "text-primary" },
+                                { page: "contact", name: "Contact", icon: "far fa-envelope", color: "text-success" },
+                                { page: "pricing", name: "Pricing", icon: "fas fa-hand-holding-usd", color: "text-warning" },
+                                { page: "faqs", name: "FAQs", icon: "far fa-question-circle", color: "text-info" }
+                            ] %}
+                            {% for option in options %}
+                            <a class="regular {{ option.color }}" href="{{ baseUrl.pages }}{{ option.page }}.html">
+                                <i class="{{ option.icon }} icon"></i> {{ option.name }}
+                            </a>
+                            {% endfor %}
+                        </div>
+
+                        <div class="st-dropdown-content-group b-t bw-2">
+                            <h4 class="text-uppercase regular">Components</h4>
+
+                            <div class="row">
+                                <div class="col mr-4">
+                                    <a target="_blank" href="{{ baseUrl.components }}alert.html">Alerts</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}badge.html">Badges</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}button.html">Buttons</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}color.html">Colors</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}accordion.html">Accordion</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}cookie-law.html">Cookielaw</a>
+                                </div>
+
+                                <div class="col mr-4">
+                                    <a target="_blank" href="{{ baseUrl.components }}overlay.html">Overlay</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}progress.html">Progress</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}lightbox.html">Lightbox</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}tab.html">Tabs</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}tables.html">Tables</a>
+                                    <a target="_blank" href="{{ baseUrl.components }}typography.html">Typography</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="st-dropdown-content-group bg-light b-t">
+                            <a target="_blank" href="{{ baseUrl.components }}wizard.html">Wizard <span
+                                    class="badge badge-pill badge-primary">New</span></a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="st-dropdown-root">
+        <div class="st-dropdown-bg">
+            <div class="st-alt-bg"></div>
+        </div>
+        <div class="st-dropdown-arrow"></div>
+        <div class="st-dropdown-container">
+            <div class="st-dropdown-section" data-dropdown="pages">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="mb-4">
+                            <h3 class="text-darker light text-nowrap"><span class="bold regular">Useful pages</span>
+                                you'll
+                                need</h3>
+                            <p class="text-secondary mt-0">Get a complete design stack</p>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <ul class="mr-4">
+                                    <li>
+                                        <h4 class="text-uppercase regular">Error</h4>
+                                    </li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}403.html">403 Error</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}404.html">404 Error</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}405.html">405 Error</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul class="mr-4">
+                                    <li>
+                                        <h4 class="text-uppercase regular">User</h4>
+                                    </li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}login.html">Login</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}register.html">Register</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}forgot.html">Forgot</a></li>
+                                </ul>
+                            </div>
+                            <div class="col">
+                                <ul>
+                                    <li>
+                                        <h4 class="text-uppercase regular">Extra</h4>
+                                    </li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}pricing.html">Pricing</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}terms.html">Terms</a></li>
+                                    <li><a target="_blank" href="{{ baseUrl.pages }}faqs.html">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-dropdown-content-group">
+                        <a class="dropdown-item bold" target="_blank" href="{{ baseUrl.pages }}about.html">
+                            <i class="far fa-building icon"></i> About
+                        </a>
+                        <a class="dropdown-item bold" target="_blank" href="{{ baseUrl.pages }}contact.html">
+                            <i class="far fa-envelope icon"></i> Contact
+                        </a>
+                        <a class="dropdown-item bold" target="_blank" href="{{ baseUrl.pages }}pricing.html">
+                            <i class="fas fa-hand-holding-usd icon"></i> Pricing
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="blocks">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="row">
+                            <div class="col mr-4">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}call-to-action.html">Call to actions</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}contact.html">Contact</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}counter.html">Counters</a>
+                                <a class="dropdown-item" target="_blank" href="{{ baseUrl.blocks }}faqs.html">FAQs</a>
+                            </div>
+                            <div class="col mr-4">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}footer.html">Footers</a>
+                                <a class="dropdown-item" target="_blank" href="{{ baseUrl.blocks }}form.html">Forms</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}navbar.html">Navbar</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}navigation.html">Navigation</a>
+                            </div>
+                            <div class="col">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}pricing.html">Pricing</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}slider.html">Sliders</a>
+                                <a class="dropdown-item" target="_blank" href="{{ baseUrl.blocks }}team.html">Team</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blocks }}testimonial.html">Testimonials</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-dropdown-content-group">
+                        <h3 class="link-title">
+                            <i class="fas fa-long-arrow-alt-right icon"></i> Coming soon
+                        </h3>
+                        <div class="ml-5">
+                            <span class="dropdown-item text-secondary">
+                                Dividers
+                            </span>
+                            <span class="dropdown-item text-secondary">
+                                Gallery
+                            </span>
+                            <span class="dropdown-item text-secondary">
+                                Screenshots
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="components">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        {% set options = [
+                            { page: "color", name: "Colors", text: "Get to know DashCore color options", icon: "fas fa-palette" },
+                            { page: "accordion", name: "Accordion", text: "Useful accordion elements", icon: "fas fa-bars" },
+                            { page: "cookie-law", name: "CookieLaw", text: "Comply with the hideous EU Cookie Law", icon: "fas fa-cookie-bite" }
+                        ] %}
+                        {% for option in options %}
+                        <a class="dropdown-item" target="_blank" href="{{ baseUrl.components }}{{ option.page }}.html">
+                            <div class="media mb-4">
+                                <i class="{{ option.icon }} icon fa-2x"></i>
+                                <div class="media-body">
+                                    <h3 class="link-title m-0">{{ option.name }}</h3>
+                                    <p class="m-0 text-secondary">{{ option.text }}</p>
+                                </div>
+                            </div>
+                        </a>
+                        {% endfor %}
+
+                        <h4 class="text-uppercase regular">Huge components list</h4>
+                        <div class="row">
+                            <div class="col mr-4">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}alert.html">Alerts</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}badge.html">Badges</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}button.html">Buttons</a>
+                            </div>
+
+                            <div class="col mr-4">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}overlay.html">Overlay</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}progress.html">Progress</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}lightbox.html">Lightbox</a>
+                            </div>
+
+                            <div class="col mr-4">
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}tab.html">Tabs</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}tables.html">Tables</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.components }}typography.html">Typography</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="st-dropdown-content-group">
+                        <a class="dropdown-item" target="_blank" href="{{ baseUrl.components }}wizard.html">Wizard <span
+                                class="badge badge-pill badge-primary">New</span></a>
+                        <span class="dropdown-item d-flex align-items-center text-muted">Timeline <i
+                                class="fas fa-ban ml-auto"></i></span>
+                        <span class="dropdown-item d-flex align-items-center text-muted">Process <i
+                                class="fas fa-ban ml-auto"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="st-dropdown-section" data-dropdown="blog">
+                <div class="st-dropdown-content">
+                    <div class="st-dropdown-content-group">
+                        <div class="row">
+                            <div class="col mr-4">
+                                <h4 class="regular text-uppercase">Full width</h4>
+                                <a class="dropdown-item" target="_blank" href="{{ baseUrl.blog }}blog-post.html">Single
+                                    post</a>
+                                <a class="dropdown-item" target="_blank" href="{{ baseUrl.blog }}blog-grid.html">Posts
+                                    Grid</a>
+                            </div>
+                            <div class="col mr-4">
+                                <h4 class="regular text-uppercase">Sidebar left</h4>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blog }}blog-post-sidebar-left.html">Single post</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blog }}blog-grid-sidebar-left.html">Posts Grid</a>
+                            </div>
+                            <div class="col mr-4">
+                                <h4 class="regular text-uppercase">Sidebar right</h4>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blog }}blog-post-sidebar-right.html">Single post</a>
+                                <a class="dropdown-item" target="_blank"
+                                    href="{{ baseUrl.blog }}blog-grid-sidebar-right.html">Posts Grid</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

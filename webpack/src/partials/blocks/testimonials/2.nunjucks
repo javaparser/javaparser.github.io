@@ -1,0 +1,44 @@
+<!-- ./Testimonials -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="section-heading text-center">
+            <h2><span class="bold">Our clients</span> have a lot to say</h2>
+        </div>
+
+        <div class="swiper-container" data-sw-navigation="#sw-nav-testimonials-1" data-sw-navigation-active="icon-lg"
+            data-sw-active-selector="img">
+            <div class="swiper-wrapper">
+                {% for i in range (1, 5) %}
+                <div class="swiper-slide">
+                    <figure class="icon company logo mockup">
+                        <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logos/{{ i }}.png" alt=""
+                            class="img-responsive mb-4">
+                    </figure>
+
+                    <blockquote class="w-75 ml-4">
+                        <i class="quote fas fa-quote-left"></i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aut consectetur dignissimos
+                            dolor doloribus earum excepturi incidunt itaque maiores molestias natus pariatur, quasi quis
+                            soluta unde vel veritatis? Eligendi, voluptatibus</p>
+                        <hr class="w-10 mt-5">
+
+                        <footer class="author font-sm">
+                            <cite class="bold text-uppercase text-primary">Jane Doe</cite> | <span
+                                class="text-secondary italic">Marketing Director</span>
+                        </footer>
+                    </blockquote>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <nav id="sw-nav-testimonials-1" class="nav nav-circle mt-4 align-items-center">
+            {% for i in range (1, 5) %}
+            <a class="nav-item nav-link" href="#" data-step="{{ loop.index }}">
+                <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/avatar/{{ loop.index }}.jpg" alt=""
+                    class="rounded-circle shadow {{ "icon-lg" if loop.index == 1 }} icon-md mr-0">
+            </a>
+            {% endfor %}
+        </nav>
+    </div>
+</section>

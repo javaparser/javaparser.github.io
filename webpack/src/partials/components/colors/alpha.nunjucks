@@ -1,0 +1,18 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Alpha colors</h2>
+        </div>
+
+        <p class="b-b pb-2 my-5 text-secondary">Text color</p>
+        {% for color in colors.bootstrap -%}
+        <code class="bold small text-center d-block my-0">.color-{{ color.name }}</code>
+        <div
+            class="d-flex flex-wrap justify-content-around mb-4{{ " bg-dark" if color.name == "contrast" or color.name == "light" }}">
+            {% for j in range(1, 10) -%}
+            <p class="my-0 small text-{{ color.name }} op-{{ j }} p-3">.alpha-{{ j }}</p>
+            {%- endfor %}
+        </div>
+        {%- endfor %}
+    </div>
+</section>

@@ -1,0 +1,92 @@
+<!-- ./Pricing Table -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row">
+            <div class="col-sm-4">
+                <h2>Affordable <span class="bold d-block">pricing plans</span></h2>
+                <p>Because every company is different, DashCore comes with multiple licensing plans that fit your needs.
+                </p>
+
+                <hr class="my-5">
+                <p class="handwritten font-md">Not want you need?</p>
+                <p>If you are looking for additional advanced features not listed here, drop us a line.</p>
+                <button class="btn btn-outline-info btn-rounded ml-0">Contact us</button>
+            </div>
+
+            {% set plans = [{
+            icon : "box",
+            plan: {
+                name: "Personal",
+                price: { monthly: 0.99, yearly: 0.78 },
+                description: "For individuals & small business"
+            },
+            features: [{
+                name: "Cras justo odio",
+                class: "strike-through"
+            }, {
+                name: "Dapibus ac facilisis in",
+                class: "strike-through"
+            }, {
+                name: "Morbi leo risus",
+                class: "strike-through"
+            }, {
+                name: "Porta ac consectetur ac"
+            }, {
+                name: "Vestibulum at eros"
+            }]
+            }, {
+            icon : "download-cloud",
+            best: true,
+            plan: {
+                name: "Premium",
+                price:{ monthly: 19.99, yearly: 15.98 },
+                description: "For enterprise team"
+            },
+            features: [{
+                name: "Cras justo odio",
+                class: "strike-through"
+            }, {
+                name: "Dapibus ac facilisis in",
+                class: "strike-through"
+            }, {
+                name: "Morbi leo risus"
+            }, {
+                name: "Porta ac consectetur ac"
+            }, {
+                name: "Vestibulum at eros"
+            }]
+            }] %}
+
+            {% for plan in plans %}
+            <div class="col-sm-4">
+                <div class="card shadow {{ 'b b-3' if plan.best }}">
+                    <div class="card-body">
+                        <h4 class="{{ 'text-primary' if plan.best }}"><span class="bold">{{ plan.plan.name }}</span>
+                            plan
+                        </h4>
+                        <p class="{{ 'bg-primary text-contrast bold p-1 rounded' if plan.best }}">
+                            {{ plan.plan.description }}
+                        </p>
+
+                        <div class="pricing text-center">
+                            <p class="pricing-value mb-4">
+                                <span class="price">{{ plan.plan.price.monthly }}</span>
+                            </p>
+
+                            <a href="#"
+                                class="btn btn-rounded {{ 'btn-primary' if plan.best else 'btn-outline-secondary' }}">I
+                                want this</a>
+                        </div>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        {% for feature in plan.features %}
+                        <li class="list-group-item {{ feature.class }}">{{ feature.name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,80 @@
+{% set testimonials = [
+  { logo: 1, customer: { name: "Jane Doe", picture: 3 }, testimonial: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quas sunt enim tempore minima tenetur voluptatem provident. Incidunt accusantium." },
+  { logo: 2, customer: { name: "John Doe", picture: 2 }, testimonial: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum eaque voluptatibus est obcaecati exercitationem maxime illo nihil voluptatem." },
+  { logo: 1, customer: { name: "Mauro", picture: 5 }, testimonial: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, quas sunt enim tempore minima tenetur voluptatem provident. Incidunt accusantium." },
+  { logo: 2, customer: { name: "5studios team", picture: 6 }, testimonial: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo harum eaque voluptatibus est obcaecati exercitationem maxime illo nihil voluptatem." }
+] %}
+<section class="seection bg-light slider-testimonials">
+  <div class="container bring-to-front">
+    <div class="section-heading text-center">
+      <h2>Our customers have something to say</h2>
+
+      <p class="lead text-muted">
+        They are the best, our customer want to let you know how DashCore is helping them to achieve their goals and how
+        simple is to use it
+      </p>
+    </div>
+
+    <div class="card shadow-lg">
+      <div class="row no-gutters">
+        <div class="col-md-6">
+          <!-- Images slider, will fade -->
+          <div class="swiper-container h-100" data-sw-effect="fade" data-sw-space-between="0">
+            <div class="swiper-wrapper">
+              {% for testimonial in testimonials %}
+              <div class="swiper-slide">
+                <figure class="m-0 image-background cover"
+                  style="background-image: url(./public/img/testimonials/{{ testimonial.customer.picture }}.jpg)">
+                  <img src="./public/img/testimonials/{{ testimonial.customer.picture }}.jpg" alt="..."
+                    class="img--responsive invisible">
+                </figure>
+              </div>
+              {% endfor %}
+            </div>
+
+            <div class="divider">
+              <div></div>
+            </div>
+          </div>
+
+          <!-- Prev button -->
+          <div class="swiper-button swiper-button-prev shadow">
+            <i data-feather="arrow-left"></i>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <!-- Testimonials slider, will slide -->
+          <div class="swiper-container h-100">
+            <div class="swiper-wrapper">
+              {% for testimonial in testimonials %}
+              <div class="swiper-slide">
+                <div class="card-body h-100 d-flex flex-column justify-content-center">
+                  <blockquote class="blockquote text-center mb-0">
+                    <figure class="mockup mb-5">
+                      <img src="./public/img/logos/companies/{{ testimonial.logo }}.svg" alt="..."
+                        class="img-responsive">
+                    </figure>
+
+                    <p class="mb-5 mb-md-6">
+                      {{ testimonial.testimonial }}
+                    </p>
+                    <footer class="blockquote-footer">
+                      <span class="h6 text-uppercase">{{ testimonial.customer.name }}</span>
+                    </footer>
+                  </blockquote>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- Next button -->
+          <div class="swiper-button swiper-button-next shadow">
+            <i data-feather="arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

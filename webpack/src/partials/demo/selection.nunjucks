@@ -1,0 +1,11 @@
+<section class="section" id="demos">
+    <div class="container-fluid">
+        <div class="section-heading text-center">
+            <h2>Demo Selection</h2>
+            <p class="lead text-secondary">DashCore comes with multiple demos, choose the one you want to give a try.
+            </p>
+        </div>
+
+        {% include "~demo/_site.nunjucks" %}
+    </div>
+</section>

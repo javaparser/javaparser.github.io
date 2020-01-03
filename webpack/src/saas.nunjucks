@@ -1,0 +1,31 @@
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+{% set main = { class: "position-relative overflow-hidden" } %}
+
+{% extends "~layout/main.nunjucks" %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/saas.nunjucks" %}
+
+{% include "~sections/shared/perspective-mockups.nunjucks" %}
+{% include "~sections/shared/text-left.nunjucks" %}
+{% include "~sections/shared/how-it-works.nunjucks" %}
+{% include "~sections/product/tabs.nunjucks" %}
+{% include "~sections/shared/singl-testimonial+text-left.nunjucks" %}
+{% include "~sections/product/zig-zag-screens.nunjucks" %}
+
+{% set section = { title: "They trust us", container: { class: "pb-0" }, class: "bg-light" } %}
+{% include "~sections/shared/brands-using.nunjucks" %}
+
+{% set section = { class: "bg-light edge bottom-right" } %}
+{% include "~sections/shared/faqs.nunjucks" %}
+{% include "~sections/shared/register.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { class: "b-t", container: { class: "pb-3" } } %}
+{% include "~blocks/footers/4cols.nunjucks" %}
+{% endblock %}

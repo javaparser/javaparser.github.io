@@ -1,0 +1,18 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Alert outline</h2>
+            <p class="lead">Alerts are available for any length of text, as well as an optional dismiss button. For proper styling, use one of the eight required contextual classes (e.g., <code>.alert-success</code>). For inline dismissal, use the alerts jQuery plugin.</p>
+        </div>
+
+        <div class="row gap-y">
+            <div class="col-md-8 mx-auto">
+                {% for alert in alerts.bootstrap -%}
+                    <div class="alert alert-{{ alert }} alert-outline" role="alert">
+                        A simple {{ alert }} alert—check it out!
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,25 @@
+{% set elements = [
+{ icon: "image", title: "Easily theme-able" },
+{ icon: "sliders", title: "Professional tools" },
+{ icon: "target", title: "Ready-to-use content" }
+] %}
+<!-- ./Design features -->
+<section id="features" class="section {{ vars.section.class }}">
+    <div class="container">
+        <div class="section-heading mb-6 text-center">
+            <h5 class="text-primary bold small text-uppercase">Design better</h5>
+            <h2>We design to fit all your needs</h2>
+        </div>
+
+        <div class="row gap-y text-center text-md-left">
+            {% for element in elements %}
+            <div class="col-md-4 py-4 rounded shadow-hover">
+                <i data-feather="{{ element.icon }}" width="36" height="36" class="stroke-primary"></i>
+                <h5 class="bold mt-3">{{ element.title }}</h5>
+                <p class="{{ vars.text.class }}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores ea
+                    fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur voluptatem?</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

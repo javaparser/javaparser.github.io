@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4a2900a1-b7d1-42d9-9a1f-c9acaabcf4d2" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/youtubePlayer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-code-generation-and-maven-in-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-inspecting-an-ast.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-inverting-ifs-in-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-javaparsers-logging-framework-in-one-file.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-less-casting-in-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-making-strings-in-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-parse-error-recovery.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-semantic-validations-in-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-setting-java-8-9-10-etc.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-03-03-the-quick-and-the-full-api-of-javaparser.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-04-05-setting-up-for-analysing-a-whole-project.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2018-05-10-pragmatic-versioning.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-04-04-code-style-architecture.markdown.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-04-05-2-5-1-to-3-0-0-migration-guide.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-04-06-testing-javaparser-code.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contributing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/cookieconsent.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/demo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fontawesome-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/helper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/odometer-theme-minimal.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pe-icon-7-stroke.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/prettify.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/simplebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smart_wizard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smart_wizard_theme_arrows.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smart_wizard_theme_circles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/smart_wizard_theme_dots.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/Pe-icon-7-stroke.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting-started.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg/asset-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg/grid.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/bg/panda-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/figures/ast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/figures/component_diagram-1-1024x340.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/jp-logo-light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/jp-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logos/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/screens/dash/calendar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/screens/dash/inbox.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/screens/dash/invoice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/shps/shape-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/01.cookie-consent-util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.1.cookie-consent-themes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.2.cookie-consent-custom-css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.3.cookie-consent-informational.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.4.cookie-consent-opt-out.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.5.cookie-consent-opt-in.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/02.6.cookie-consent-location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/cookieconsent.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/forms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.animatebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.counterup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.magnific-popup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.smartWizard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.waypoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/modernizr-2.8.3.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/odometer.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/particles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/prettify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/simplebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/site.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/stripe-menu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/typed.js" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+      <method />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4a2900a1-b7d1-42d9-9a1f-c9acaabcf4d2" name="Default" comment="" />
+      <created>1578081938497</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1578081938497</updated>
+      <workItem from="1578081941112" duration="767000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="767000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32893" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24964234" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="225">
+            <caret line="15" column="25" selection-start-line="15" selection-end-line="15" selection-end-column="25" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

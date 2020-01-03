@@ -1,0 +1,18 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Cookie Law',
+subtitle : "Alert your visitors about the use of cookies on your website. Comply with the hideous EU Cookie Law.",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block main %}
+{% include "~components/cookielaw/themes.nunjucks" %}
+{% include "~components/cookielaw/custom-css.nunjucks" %}
+{% include "~components/cookielaw/informational.nunjucks" %}
+{% include "~components/cookielaw/opt-out.nunjucks" %}
+{% include "~components/cookielaw/opt-in.nunjucks" %}
+{% include "~components/cookielaw/location.nunjucks" %}
+{% endblock %}

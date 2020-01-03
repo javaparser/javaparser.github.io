@@ -1,0 +1,22 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/fixed-top.nunjucks" %}
+{% endblock %}
+
+{% set page = {
+title: 'Dashcore Blog',
+subtitle : "What our awesome community is talking about",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% block content %}
+{% include "~demo/layout/page.nunjucks" %}
+{% include "~blog/grid/all.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% include "~demo/layout/footer.nunjucks" %}
+{% endblock %}

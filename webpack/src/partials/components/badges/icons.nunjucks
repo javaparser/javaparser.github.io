@@ -1,0 +1,17 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Badges with Icons</h2>
+            <p class="lead">Badges can be used as part of links or buttons to provide a counter.</p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-around py-5">
+            {% for badge in badges.bootstrap -%}
+                <span class="rounded-pill shadow-box badge badge-{{ badge }} bold py-2 px-4 mt-2">
+                    <i class="far fa-lightbulb{{ " text-primary" if badge == "contrast" or badge == "light" }} mr-2"></i>
+                    <span class="{{ "text-primary" if badge == "contrast" or badge == "light" }}">Awesome</span> badge
+                </span>
+            {%- endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,41 @@
+<!-- ./Counters -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="row align-items-center text-center text-lg-left">
+            <div class="col-12 col-md-7 col-lg-6 mr-lg-auto text-center text-md-left">
+                <i data-feather="activity" width="36" height="36" class="stroke-primary"></i>
+                <p class="small text-primary bold">Amazing stats</p>
+                <h2 class="bold">Get the very best of us by doing the best of you</h2>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores
+                    dolorum,
+                    error est excepturi exercitationem hic iusto minus nam officia optio quasi tempore voluptatibus. Aut
+                    dolore in nostrum quae voluptatem!</p>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-5">
+                <div class="row no-gutters">
+                    {% set boxes = [
+                    { value : "954", valueCss: "text-info", text: "Users", class: "mb-3 pr-3", bg: "bg-contrast", icon: "user", iconClass:"stroke-secondary" },
+                    { value : "37", valueCss: "text-info", text: "Downloads", class: "mb-3", bg: "bg-contrast", icon: "download-cloud", iconClass:"stroke-secondary" },
+                    { value : "19", valueCss: "text-info", text: "Plugins", class: "pr-3", bg: "bg-contrast", icon: "box", iconClass:"stroke-secondary" },
+                    { value : "31", valueCss: "", text: "Projects", bg: "bg-primary text-contrast", icon: "star", iconClass:"stroke-contrast" }
+                    ] %}
+                    {% for box in boxes %}
+                    <div class="col-6 {{ box.class }}">
+                        <div
+                            class="rounded border shadow-box shadow-hover p-2 p-sm-3 d-flex align-items-center flex-wrap {{ box.bg }}">
+                            <i data-feather="{{ box.icon }}" width="36" height="36"
+                                class="mr-4 {{ box.iconClass }}"></i>
+
+                            <div class="text-left">
+                                <p class="counter font-md bold m-0 {{ box.valueCss }}">{{ box.value }}</p>
+                                <p class="m-0">{{ box.text }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

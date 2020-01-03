@@ -1,0 +1,46 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+    title: 'Buttons',
+    subtitle : "Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.",
+    class: 'gradient gradient-purple-blue'
+} %}
+
+{% set buttons = {
+bootstrap: [
+    { name: 'primary' },
+    { name: 'secondary' },
+    { name: 'success' },
+    { name: 'danger' },
+    { name: 'warning' },
+    { name: 'info' },
+    { name: 'light' },
+    { name: 'dark' },
+    { name: 'link' },
+
+    { name: 'alternate' },
+    { name: 'contrast' },
+    { name: 'darker' },
+    { name: 'black' }
+],
+theme: [
+    { name: '1' },
+    { name: '2' },
+    { name: '3' },
+    { name: '4' },
+    { name: '5' },
+    { name: '6' },
+    { name: 'accent' }
+],
+sizes: ['xs', 'sm', 'md', 'lg', 'xl']
+} %}
+
+{% block main %}
+{% include "~components/buttons/solid.nunjucks" %}
+{% include "~components/buttons/outline.nunjucks" %}
+{% include "~components/buttons/rounded.nunjucks" %}
+{% include "~components/buttons/circle.nunjucks" %}
+{% include "~components/buttons/sized.nunjucks" %}
+{% endblock %}

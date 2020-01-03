@@ -1,0 +1,23 @@
+<!-- ./Slider - Autoplay -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="section-heading text-center">
+            <h2 class="font-md">Autoplay</h2>
+            <p class="small italic">Adjust delay and speed for each transition</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="swiper-container" data-sw-pagination="false" data-sw-nav-arrows="false" data-sw-autoplay="2000" data-sw-speed="800">
+                    <div class="swiper-wrapper">
+                        {% for gr in gravities %}
+                            <div class="swiper-slide">
+                                <img src="https://picsum.photos/540/360/?random&gravity={{ gr }}" alt="" class="img-responsive">
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

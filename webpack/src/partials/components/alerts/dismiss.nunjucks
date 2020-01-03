@@ -1,0 +1,21 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Dismissing</h2>
+            <p class="lead">Using the alert JavaScript plugin, it’s possible to dismiss any alert inline.</p>
+        </div>
+
+        <div class="row gap-y">
+            <div class="col-md-8 mx-auto">
+                {% for alert in alerts.bootstrap -%}
+                    <div class="alert alert-{{ alert }} alert-dismissible fade show" role="alert">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+</section>

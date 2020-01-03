@@ -1,0 +1,119 @@
+{% set demos = [
+        { title: 'Business Solutions',
+            urls: [{
+                link: 'business-solutions.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '12',
+            btn: { class: "warning" },
+            new: true
+        },
+        { title: 'App Landing',
+            urls: [{
+                link: 'app-landing-2.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }], 
+            cover: '10', 
+            btn: { class: "warning" }, 
+            new: true
+        },
+        { title: 'Integration',
+            urls: [{
+                link: 'integration.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }], 
+            cover: '11', 
+            btn: { class: "warning" }, 
+            new: true
+        },
+
+        {
+            title: 'Corporate',
+            urls: [{
+                link: 'corporate.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '1',
+            btn: { class: "warning" }
+        },
+        { title: 'Startup',
+            urls: [{
+                link: 'startup.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '2',
+            btn: { class: "warning" }
+        },
+        { title: 'Saas',
+            urls: [{
+                link: 'saas.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '3',
+            btn: { class: "warning" }
+        },
+        { title: 'Developer',
+            urls: [{
+                link: 'developers.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '4',
+            btn: { class: "warning" }
+        },
+        { title: 'Payment',
+            urls: [{
+                link: 'online-payment.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '6',
+            btn: { class: "warning" }
+        },
+        { title: 'Business',
+            urls: [{
+                link: 'smart-business.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '7',
+            btn: { class: "warning" }
+        },
+        { title: 'Marketing',
+            urls: [{
+                link: 'automate-social.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }],
+            cover: '8',
+            btn: { class: "warning" }
+        },
+        { title: 'Social',
+            urls: [{
+                link: 'social.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }], cover: '5', btn: { class: "warning" }
+        },
+        { title: 'App Landing',
+            urls: [{
+                link: 'app-landing.html',
+                icon: "fas fa-desktop",
+                text:"Demo"
+            }], cover: '9', btn: { class: "warning" }
+        }
+] %}
+
+<div class="row gap-y">
+    {% for demo in demos -%}
+    <div class="col-sm-6 col-md-4">
+        {% include "~demo/_demo.nunjucks" %}
+    </div>
+    {%- endfor %}
+</div>

@@ -1,0 +1,19 @@
+<!-- ./FAQs -->
+<section class="section {{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="section-heading text-center">
+            <h2 class="text-capitalize">frequently <span class="bold">asked questions</span></h2>
+            <p class="lead text-secondary">Here are the answers to some of the most common questions we hear from our
+                appreciated customers</p>
+        </div>
+
+        <div class="row gap-y">
+            {% for faq in faqs %}
+            <div class="col-md-6">
+                <h5 class="bold">{{ faq.question }}</h5>
+                <p>{{ faq.answer | safe }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

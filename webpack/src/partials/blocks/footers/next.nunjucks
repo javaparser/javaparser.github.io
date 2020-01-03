@@ -1,0 +1,70 @@
+<!-- ./Footer - Social + Subscription -->
+<footer class="site-footer section {{ demo.class }}">
+    <div class="bg-darker">
+        <div class="container text-center {{ demo.container.class }}">
+            <nav class="nav justify-content-center my-4">
+                <a href="#" class="mr-4 font-regular text-contrast"><i
+                        class="fab fa-facebook"></i><span>/my.page</span></a>
+                <a href="#" class="mr-4 font-regular text-contrast"><i
+                        class="fab fa-twitter-square"></i><span>/hashtag</span></a>
+                <a href="#" class="mr-4 font-regular text-contrast"><i
+                        class="fab fa-linkedin"></i><span>/linkedin</span></a>
+                <a href="#" class="font-regular text-contrast"><i
+                        class="fab fa-google-plus-square"></i><span>/account</span></a>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container {{ demo.container.class }}">
+        <div class="row gap-y">
+            <div class="col-md-4">
+                <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo.png" alt="" class="logo">
+
+                <nav class="nav mt-4">
+                    <a href="#" class="mr-3">About us</a>
+                    <a href="#" class="mr-3">Our process</a>
+                    <a href="#" class="mr-3">Contact us</a>
+                </nav>
+
+                <p class="mb-0 small text-secondary">Copyright © 2018. All rights reserved. <a
+                        href="5studios.net">5studios.net</a></p>
+            </div>
+
+            <div class="col-md-4">
+                <h6 class="bold">Your Office</h6>
+                <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur elit. Blanditiis commodi expedita,
+                    odit
+                    officiis?</p>
+
+                <nav class="nav flex-column small">
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-map-marker mr-2"></i> 123 Street St, Your City, YC Your Country
+                    </div>
+                    <div class="mt-2 d-flex align-items-center">
+                        <i class="fas fa-phone mr-2"></i> (123) 456-7890
+                    </div>
+                    <div class="mt-2 d-flex align-items-center">
+                        <i class="fas fa-envelope mr-2"></i> <a
+                            href="mailto:yourmail@domain.com">yourmail@domain.com</a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-4">
+                <h6 class="bold">Subscribe to our newsletter</h6>
+                <p class="text-secondary">By registering with us, you will receive right in your inbox all new features
+                    and
+                    updates. <span class="bold">Subscribe now!</span></p>
+
+                {% set vars = { button: { class: "btn-dark" } } %}
+                {% include "~sections/form/register.nunjucks" %}
+            </div>
+        </div>
+
+        <hr>
+        <nav class="nav small">
+            <a href="#" class="text-secondary mr-3">Privacy policy</a>
+            <a href="#" class="text-secondary">Terms</a>
+        </nav>
+    </div>
+</footer>

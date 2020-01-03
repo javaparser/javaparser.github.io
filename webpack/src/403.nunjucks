@@ -1,0 +1,5 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% block content %}
+{% include "~sections/status/403.nunjucks" %}
+{% endblock %}

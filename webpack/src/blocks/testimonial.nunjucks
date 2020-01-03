@@ -1,0 +1,19 @@
+{% extends "~layout/blocks.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+title: 'Testimonials',
+subtitle : "Your customer have so much to say about your product and inspire your future customers to be part of circle of trust",
+class: 'gradient gradient-purple-blue'
+} %}
+
+{% set section = { class: "block bg-contrast", container: { class: "py-4" } } %}
+
+{% block main %}
+{% include "~blocks/testimonials/1.nunjucks" %}
+{% include "~blocks/testimonials/2.nunjucks" %}
+{% include "~blocks/testimonials/3.nunjucks" %}
+{% include "~blocks/testimonials/4.nunjucks" %}
+{% include "~blocks/testimonials/5.nunjucks" %}
+{% endblock %}

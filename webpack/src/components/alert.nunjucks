@@ -1,0 +1,39 @@
+{% extends "~layout/components.nunjucks" %}
+
+{% set baseUrl = { path: "../", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% set page = {
+    title: 'Alerts',
+    subtitle : "Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.",
+    class: 'gradient gradient-purple-blue'
+} %}
+
+{% set alerts = {
+    icons: [
+        { name: 'primary', icon: "info-circle" }, 
+        { name: 'secondary', icon: "check-circle" }, 
+        { name: 'success', icon: "check" }, 
+        { name: 'danger', icon: "exclamation-circle" }, 
+        { name: 'warning', icon: "exclamation-triangle" }, 
+        { name: 'info', icon: "info-circle" }, 
+        { name: 'light', icon: "info" }, 
+        { name: 'dark', icon: "check-circle" },
+        { name: 'alternate', icon: "check-circle" },
+        { name: 'contrast', icon: "check-circle" },
+        { name: 'darker', icon: "check-circle" },
+        { name: 'black', icon: "check-circle" }
+    ],
+    bootstrap: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark', 'alternate', 'contrast', 'darker', 'black'],
+    theme: [ '1', '2', '3', '4', '5', '6'],
+    sizes: ['xs', 'sm', 'md', 'lg', 'xl'],
+    light: ['1', 'outline-1', 'outline-6', 'outline-light']
+} %}
+
+{% block main %}
+{% include "~components/alerts/default.nunjucks" %}
+{% include "~components/alerts/thin.nunjucks" %}
+{% include "~components/alerts/outline.nunjucks" %}
+{% include "~components/alerts/icons.nunjucks" %}
+{% include "~components/alerts/additional-content.nunjucks" %}
+{% include "~components/alerts/dismiss.nunjucks" %}
+{% endblock %}

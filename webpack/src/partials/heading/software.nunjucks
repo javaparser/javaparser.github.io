@@ -1,0 +1,16 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% set baseUrl = { path: "/", img: "img", blog: "blog/", components: "components/", blocks: "blocks/" } %}
+
+{% block navigation %}
+{% include "~layout/navigation/stripe.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+{% include "~heading/software.nunjucks" %}
+{% endblock %}
+
+{% block footer %}
+{% set demo = { class: "block bg-contrast", container: { class: "py-4" } } %}
+{% include "~blocks/footers/stay-in-touch.nunjucks" %}
+{% endblock %}

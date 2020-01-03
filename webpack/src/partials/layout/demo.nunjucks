@@ -1,0 +1,15 @@
+{% extends "~layout/main.nunjucks" %}
+
+{% block navigation %}
+    {% include "~demo/layout/navigation.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+    {% include "~demo/layout/page.nunjucks" %}
+
+    {% block main %} {% endblock %}
+{% endblock %}
+
+{% block footer %}
+    {% include "~demo/layout/footer.nunjucks" %}
+{% endblock %}

@@ -1,0 +1,14 @@
+<section class="section bg-light">
+    <div class="container">
+        <div class="card shadow bg-contrast reviews-wrapper">
+            <header class="card-header p-5">
+                <h2 class="display-4 display-lg-3">DashCore</h2>
+                <p class="lead text-secondary mb-0">Changelog</p>
+            </header>
+
+            {% for review in reviews %}
+            {% include "~sections/changelog/reviews/_review.nunjucks" %}
+            {% endfor %}
+        </div>
+    </div>
+</section>

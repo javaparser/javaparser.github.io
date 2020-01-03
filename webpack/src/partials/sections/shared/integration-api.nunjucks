@@ -1,0 +1,26 @@
+<!-- ./Integration API -->
+<section class="section mt-6n">
+    <div class="container pt-0">
+        <div class="shadow bg-contrast p-4 rounded">
+            <div class="row gap-y text-center text-md-left">
+                {% set blocks = [
+                    { title: "Engagement API", description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur.", navigation: "javascript:;" },
+                    { title: "Invoicing API", description: "Consequuntur fugit minima natus optio quisquam sint sunt? Earum harum in laudantium nobis obcaecati odio.", navigation: "javascript:;" },
+                    { title: "Reporting API", description: "Earum harum in laudantium nobis obcaecati odio, praesentium, quis sequi soluta vel veniam.", navigation: "javascript:;" }
+                ] %}
+                {% for block in blocks %}
+                <div class="col-md-4 py-4 px-5 d-flex flex-column {{ "b-md-r" if loop.index != 3 }}">
+                    <a href="{{ block.navigation }}" class="text-darker">
+                        <h4 class="bold mr-3">{{ block.title }}</h4>
+                    </a>
+
+                    <p class="mt-4">{{ block.description }}</p>
+
+                    <a href="{{ block.navigation }}" class="d-block d-md-flex align-items-center mt-auto">Learn more <i
+                            class="fas fa-long-arrow-alt-right ml-3"></i></a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

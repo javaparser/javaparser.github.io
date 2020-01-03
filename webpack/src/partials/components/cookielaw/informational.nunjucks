@@ -1,0 +1,11 @@
+<!-- ./CookieLaw - Informational -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Informational</h2>
+            <p class="lead">An informational notice simply tells users that we use cookies, and lets the user dismiss the message. This is the simplest solution, and recommended for most websites.</p>
+        </div>
+
+        <ul class="example-selector example-selector-informational"></ul>
+    </div>
+</section>

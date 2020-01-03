@@ -1,0 +1,14 @@
+<!-- ./Partners - Become a Partner -->
+<section class="section">
+    <div class="container bring-to-front">
+        <div class="shadow text-center rounded bg-info text-contrast p-5">
+            <h3 class="mb-5">Are you a consultant / development house working with e-commerce?</h3>
+
+            <p class="handwritten highlight font-md">Become a Partner</p>
+
+            <a href="mailto:samarbejdspartner@pakkelabels.dk" class="btn btn-dark btn-rounded">
+                <i class="fas fa-envelope mr-2"></i> Join now
+            </a>
+        </div>
+    </div>
+</section>

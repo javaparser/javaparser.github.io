@@ -1,0 +1,72 @@
+<!-- ./Main Navigation -->
+<nav class="navbar navbar-expand-md main-nav navigation dark-link sidebar-left">
+    <div class="container">
+        <button class="navbar-toggler" type="button">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a href="#main" class="navbar-brand">
+            <img src="./public/{{ baseUrl.img }}/logo.png" alt="Dashcore" class="logo logo-sticky">
+        </a>
+
+        <div class="collapse navbar-collapse ml-auto" id="main-navbar">
+            <div class="sidebar-brand">
+                <a href="index.html">
+                    <img src="./public/{{ baseUrl.img }}/logo.png" alt="Dashcore Template" class="logo">
+                </a>
+            </div>
+
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="{{ baseUrl.pages }}index.html">Home</a></li>
+                <li class="nav-item d-md-none d-lg-block"><a class="nav-link"
+                        href="{{ baseUrl.pages }}about.html">About</a></li>
+                <li class="nav-item dropdown mega">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#pricing">Product</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-4 b-md-r">
+                                    <a class="dropdown-item text-wrap" href="javascript:;">
+                                        <p class="bold my-0">For Designers</p>
+                                        <p class="my-0 small">Awesome design blocks</p>
+                                    </a>
+
+                                    <a class="dropdown-item text-wrap" href="{{ baseUrl.pages }}developers.html">
+                                        <p class="bold my-0">For Developers</p>
+                                        <p class="my-0 small">The developers' place</p>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <h3 class="text-darker mb-0 light mt-4 mt-md-0">Think about<span
+                                            class="bold d-block">your business</span></h3>
+                                    <p class="text-secondary">Our best bet is you, we can ensure that our template will
+                                        fit most of your needs.</p>
+
+                                    <a href="{{ baseUrl.pages }}pricing.html" class="btn btn-rounded btn-info mt-3">View
+                                        plan & prices</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="{{ baseUrl.pages }}pricing.html">Pricing</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ baseUrl.pages }}contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="{{ baseUrl.blog }}blog-grid.html">Blog</a></li>
+            </ul>
+
+            <nav class="nav navbar-nav ml-md-auto justify-content-center mt-4 mt-md-0 flex-row">
+                <a class="btn btn-rounded btn-outline mr-3 px-3" href="{{ baseUrl.pages }}login.html" target="_blank">
+                    <i class="fas fa-sign-in-alt d-none d-md-inline mr-md-0 mr-lg-2"></i>
+                    <span class="d-md-none d-lg-inline">Login</span>
+                </a>
+                <a class="btn btn-rounded btn-solid px-3" href="{{ baseUrl.pages }}signup.html" target="_blank">
+                    <i class="fas fa-user-plus d-none d-md-inline mr-md-0 mr-lg-2"></i>
+                    <span class="d-md-none d-lg-inline">Signup</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+</nav>

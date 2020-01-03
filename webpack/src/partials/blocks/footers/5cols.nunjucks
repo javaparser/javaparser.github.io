@@ -1,0 +1,54 @@
+<!-- ./Footer - Five Columns -->
+<footer class="site-footer section bg-darker text-contrast {{ demo.class }}">
+    <div class="container {{ demo.container.class }}">
+        <div class="row gap-y text-center text-md-left">
+            <div class="col-md-4 mr-auto">
+                <img src="{{ baseUrl.path }}public/{{ baseUrl.img }}/logo-light.png" alt="" class="logo">
+
+                <p>Dashcore, a carefully crafted and powerful HTML5 template, it's perfect to showcase your startup or
+                    software</p>
+            </div>
+
+            <div class="col-md-2">
+                <nav class="nav flex-column">
+                    <a class="nav-item py-2 text-contrast" href="#">About</a>
+                    <a class="nav-item py-2 text-contrast" href="#">Services</a>
+                    <a class="nav-item py-2 text-contrast" href="#">Blog</a>
+                </nav>
+            </div>
+
+            <div class="col-md-2">
+                <nav class="nav flex-column">
+                    <a class="nav-item py-2 text-contrast" href="#">Features</a>
+                    <a class="nav-item py-2 text-contrast" href="#">API</a>
+                    <a class="nav-item py-2 text-contrast" href="#">Customers</a>
+                </nav>
+            </div>
+
+            <div class="col-md-2">
+                <nav class="nav flex-column">
+                    <a class="nav-item py-2 text-contrast" href="#">Careers</a>
+                    <a class="nav-item py-2 text-contrast" href="#">Contact</a>
+                    <a class="nav-item py-2 text-contrast" href="#">Search</a>
+                </nav>
+            </div>
+
+            <div class="col-md-2">
+                <h6 class="py-2 small">Follow us</h6>
+
+                <nav class="nav justify-content-between">
+                    <a href="#" class="btn btn-circle btn-sm brand-facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="btn btn-circle btn-sm brand-twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="btn btn-circle btn-sm brand-instagram"><i class="fab fa-instagram"></i></a>
+                </nav>
+            </div>
+        </div>
+
+        <hr class="mt-5 bg-secondary op-5">
+        <div class="row small align-items-center">
+            <div class="col-md-4">
+                <p class="mt-2 mb-0">© 2018 5studios. All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>

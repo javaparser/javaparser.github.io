@@ -1,0 +1,15 @@
+<!-- ./Lightbox - Ajax -->
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 id="examples">Ajax Popup</h2>
+            <p class="lead">You have full control of what is displayed in popup, align it to any side via CSS, enable or disable scroll on right side of window - whatever.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+                <a class="modal-popup" href="ajax-content.html" data-type="ajax">Load content via ajax</a>
+            </div>
+        </div>
+    </div>
+</section>

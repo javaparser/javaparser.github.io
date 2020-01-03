@@ -1,0 +1,81 @@
+{% set reviews = [
+{ author: "Jane Doe", title: [ "Social ", "Integration" ], description: "", image: "" },
+{ author: "Lorem Team", title: [ "Design ", "Strategy" ], description: "", image: "" },
+{ author: "Ipsum Team", title: [ "Save ", "Money" ], description: "", image: "" },
+{ author: "Priscilla Campbell", title: [ "Business ", "Brain" ], description: "", image: "" },
+{ author: "Edith Fisher", title: [ "Worldwide ", "Support" ], description: "", image: "" },
+{ author: "Kenneth Reyes", title: [ "Social ", "Settings" ], description: "", image: "" },
+{ author: "Daniel Hamilton", title: [ "Insightful", "Statistics" ], description: "", image: "" }
+]
+%}
+<!-- User Reviews -->
+<section class="section singl-testimonial">
+    <div class="container pt-8 bring-to-front">
+        <div class="swiper-container pb-0 pb-lg-8" data-sw-nav-arrows=".reviews-nav">
+            <div class="swiper-wrapper">
+                {% for review in reviews %}
+                <div class="swiper-slide">
+                    <div class="row gap-y align-items-center">
+                        <div class="col-lg-6">
+                            <figure class="testimonial-img ml-md-auto">
+                                <img src="./public/img/v6/reviews/{{ loop.index }}.jpg"
+                                    class="img-responsive rounded shadow-lg" alt="...">
+                            </figure>
+                        </div>
+
+                        <div class="col-lg-6 ml-md-auto">
+                            <div
+                                class="user-review text-center italic bg-primary text-contrast rounded shadow-lg py-5 px-4 px-lg-6">
+                                <blockquote class="regular py-4">
+                                    <i class="quote fas fa-quote-left"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet aspernatur,
+                                    autem deserunt distinctio dolores eius, exercitationem facilis inventore.
+                                </blockquote>
+
+                                <div class="author mt-4">
+                                    <p class="small">
+                                        <span class="bold text-contrast">{{ review.author }},</span> Web Developer
+                                    </p>
+
+                                    <img src="./public/img/v6/reviews/signature.svg"
+                                        class="img-responsive signature mx-auto" alt="...">
+                                </div>
+
+                                <div class="shape-wrapper" data-aos="fade-up">
+                                    <svg class="svg-review-bottom" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <path d="M95,0 Q90,90 0,100 L100,100 100,0 Z" fill="#8B41EB"></path>
+                                    </svg>
+
+                                    <svg class="svg-review-bottom back" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <path d="M95,0 Q90,90 0,100 L100,100 100,0 Z" fill="#DC92FF"></path>
+                                    </svg>
+
+                                    <svg class="svg-review-bottom back left" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 100 100" preserveAspectRatio="none">
+                                        <path d="M95,0 Q90,90 0,100 L100,100 100,0 Z" fill="#A45AFF"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- Add Arrows -->
+            <div class="reviews-navigation">
+                <div class="reviews-nav reviews-nav-prev btn btn-light btn-rounded shadow-box shadow-hover">
+                    <!-- <span class="text-uppercase small">Next</span> -->
+                    <i class="reviews-nav-icon fas fa-long-arrow-alt-left"></i>
+                </div>
+
+                <div class="reviews-nav reviews-nav-next btn btn-light btn-rounded shadow-box shadow-hover">
+                    <!-- <span class="text-uppercase small">Next</span> -->
+                    <i class="reviews-nav-icon fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,31 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Rounded</h2>
+            <p class="lead">Bootstrap includes several predefined button styles, each serving its own semantic purpose,
+                with a few extras thrown in for more control.</p>
+        </div>
+
+        <div class="bootstrap">
+            <div class="row gap-y">
+                <div class="col-12 d-flex flex-wrap justify-content-around">
+                    {% for button in buttons.bootstrap -%}
+                    <div class="mr-5 mb-3">
+                        <button type="button"
+                            class="btn btn-rounded btn-{{ button.name }}">{{ button.name | capitalize }}</button>
+                    </div>
+                    {%- endfor %}
+                </div>
+
+                <div class="col-12 d-flex flex-wrap justify-content-around">
+                    {% for button in buttons.bootstrap -%}
+                    <div class="mr-5 mb-3">
+                        <button type="button"
+                            class="btn btn-rounded btn-outline-{{ button.name }}">{{ button.name | capitalize }}</button>
+                    </div>
+                    {%- endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

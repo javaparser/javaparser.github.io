@@ -1,0 +1,19 @@
+<section class="section b-b" id="colors-gradient">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Gradients</h2>
+            <p class="lead">You can opt to use gradients background by adding <code>.gradient</code> to any element.</p>
+        </div>
+
+        <div class="row gap-y">
+            {% for gradient in colors.gradients -%}
+            {% for variant in gradient.variants -%}
+            <div class="col-6 col-lg-4">
+                <div class="gradient gradient-{{ gradient.base }}-{{ variant }} text-contrast lead p-4">
+                    .gradient-{{ gradient.base }}-{{ variant }}</div>
+            </div>
+            {%- endfor %}
+            {%- endfor %}
+        </div>
+    </div>
+</section>

@@ -1,0 +1,93 @@
+<!-- ./Pricing cards -->
+<section>
+    <div class="container">
+        <div class="section-heading text-center">
+            <h2 class="mb-2">Simple and affordable prices </h2>
+            <p class="lead text-secondary">Try Dashcore Pro for 14 days. No credit card required!.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 mt-5">
+                <div class="card text-center">
+                    <div class="pricing card-header bg-light-gradient d-flex align-items-center flex-column">
+                        <h4>Personal</h4>
+
+                        <div class="pricing-value"><span class="price bold">0.99</span></div>
+
+                        <p>Includes simple but powerful functionality for individuals and small teams. You can upgrade
+                            on the way</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item strike-through">Cras justo odio</li>
+                        <li class="list-group-item strike-through">Dapibus ac facilisis in</li>
+                        <li class="list-group-item strike-through">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="#" class="btn btn-outline-secondary">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-5">
+                <div class="card text-center">
+                    <div
+                        class="pricing card-header bg-primary-gradient text-contrast d-flex align-items-center flex-column">
+                        <h4>Business</h4>
+
+                        <div class="pricing-value"><span class="price bold">29.99</span></div>
+
+                        <p>For settle companies looking to stay competitive in the market and growing with the
+                            technology</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item strike-through">Cras justo odio</li>
+                        <li class="list-group-item strike-through">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="#" class="btn btn-primary">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mt-5">
+                <div class="card text-center">
+                    <div class="pricing card-header bg-light-gradient d-flex align-items-center flex-column">
+                        <h4>Enterprise</h4>
+
+                        <div class="pricing-value"><span class="price bold">99.99</span></div>
+
+                        <p>Everything you can get from a professional solution to keep your business on its way to
+                            success</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item">Porta ac consectetur ac</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="#" class="btn btn-outline-secondary">
+                            Buy now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

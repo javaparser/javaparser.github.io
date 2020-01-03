@@ -1,0 +1,25 @@
+<section class="section b-b">
+    <div class="container">
+        <div class="section-heading">
+            <h2 id="examples">Sizing</h2>
+            <p class="lead">Easily change the size of your text with sizing classes.</p>
+        </div>
+
+        <table class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>Heading</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for size in sizing -%}
+                <tr>
+                    <td><code>.font-{{ size }}</code></td>
+                    <td><span class="font-{{ size }}">Text size variation.</span></td>
+                </tr>
+            {%- endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>

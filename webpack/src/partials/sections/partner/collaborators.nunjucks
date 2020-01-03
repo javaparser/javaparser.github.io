@@ -1,0 +1,150 @@
+<!-- ./Partners - Collaborators -->
+<section class="section">
+    <div class="container">
+        <div class="section-heading">
+            <!-- <h2>Collaborators</h2> -->
+            <p class="text-secondary lead bold">Søger du f.eks. rådgivning til optimering af din fragthåndtering eller
+                har du brug for hjælp til til at integrere Pakkelabels.dk med dit shopsystem/økonomisystem, så kontakt
+                en af vores partnere herunder.</p>
+        </div>
+
+        <div class="row gap-y">
+            {% set partners = [{
+                name: "Danhost",
+                url: "#",
+                descriptions: [
+                    "Danhost Webshop er under konstant udvikling, med løbende opdateringer og nye features. Foruden et brugervenligt shopsystem, får du store fordele blandt vores samarbejdspartnere.",
+                    "Vi har præinstalleret Pakkelabels.dk i alle vores webshops, hvilket betyder, at du med vores løsning automatisk får adgang til et væld af forsendelsesmuligheder helt fra starten"
+                ],
+                platforms: ["Danhost"]
+            }, {
+                name: "ErhvervsHjemmesider.dk",
+                url: "#",
+                descriptions: [
+                    "Hos ErhvervsHjemmesider.dk ApS er vi eksperter i WordPress og WooCommerce.",
+                    "Pakkelabels.dk er hos os det oplagte valg, når det kommer til opsætning af fragt. Vi kan hjælpe med råd og vejledning omkring de muligheder, der er i Pakkelabels.dk’s WordPress plugin, samt opsætning af integration mellem de to platforme."
+                ],
+                platforms: ["WordPress", "WooCommerce"]
+            }, {
+                name: "SiteTech Webudvikling",
+                url: "#",
+                descriptions: [
+                    "SiteTech Webudvikling er et udviklingshus på Fyn, der er specialiseret i PHP baserede webløsninger.",
+                    "SiteTech Webudvikling tilbyder at udvikle integrationen mellem dit websystem og Pakkelabels.dk. Har du derfor særlige behov, så er det SiteTech Webudvikling, som du skal have fat i."
+                ],
+                platforms: ["Alt i PHP"]
+            }, {
+                name: "AWORK Webbureau",
+                url: "#",
+                descriptions: [
+                    "AWORK Webbureau hjælper både små og større virksomheder med webshop-løsninger. Vi udvikler primært i Magento, WooCommerce og PHP. AWORK har flere års erfaring indenfor online markedsføring og er en god sparringspartner, når man vil ramme sin målgruppe via en webshop. AWORKs primære fokus er at løsningerne giver omsætning til kunderne."
+                ],
+                platforms: ["Magento", "WooCommerce"]
+            }, {
+                name: "Kong Gulerod Reklamebureau",
+                url: "#",
+                descriptions: [
+                    "Hos Kong Gulerod Reklamebureau, har vi, i Tea Commerce til Umbraco, udviklet vores egen webshop platform; ScepterCommerce. Platformen er bl.a. integreret med Pakkelabels.dk, som er med til at sikre en effektiv ordrebehandling.",
+                    "ScepterCommerce er på den måde både relevant for små, mellemstore og store webshops."
+                ],
+                    platforms: ["Umbraco", "ScepterCommerce"]
+            }, {
+                name: "Eagle Media",
+                url: "#",
+                descriptions: [
+                    "Eagle Media er et Webbureau beliggende i Aalborg som er eksperter i webshop løsninger og special programmering.",
+                    "Vi tilbyder hjælp til opsætning af Pakkelabels.dk standard integrationer på din webshop eller vi kan lave en integrationen specielt til din webløsning afhængig af dit behov."
+                ],
+                platforms: ["ShopOrama", "Shopify", "WooCommerce"]
+            }, {
+                name: "Inventio.IT",
+                url: "#",
+                descriptions: [
+                    "Inventio.IT A/S er blandt de førende leverandører af IT-løsninger og blandt Danmarks største forhandler af økonomisystemerne Microsoft Dynamics C5 og NAV.",
+                    "Vi driver bl.a. SaaS platformen C5online.nu og NAVonline.nu, hvor vi tilbyder vores kunder produktet SMARTforsendelse, der er en integreret løsning til Pakkelabels.dk’s fragtplatform."
+                ],
+                platforms: ["Microsoft Dynamics C5", "NAV"]
+            }, {
+                name: "Navi Partner",
+                url: "#",
+                descriptions: [
+                    "NaviPartner leverer forretningsløsninger til detail- og e-handel. Et af vores kendte løsninger er NP Retail, der er en integreret POS baseret på Dynamics NAV.",
+                    "I NP Retail har vi integreret til Pakkelabels.dk, hvilket betyder, at der fra NP Retail let og effektiv kan oprettes forsendelser mellem butikkerne og håndtere webordrer."
+                ],
+                platforms: ["Microsoft Dynamics NAV", "Magento"]
+            }, {
+                name: "Skanderby",
+                url: "#",
+                descriptions: [
+                    "Skanderby er specialister i Microsoft Dynamics NAV. Vi hjælper med din IT-løsning, uanset om det drejer sig om implementering, vedligeholdelse, konvertering eller support.",
+                    "Har du brug for at integrere Pakkelabels.dk med dit økonomisystem, så står vi klar til at hjælpe med at rådgive og varetage implementeringen af løsningen for dig."
+                ],
+                platforms: ["Microsoft Dynamics NAV"]
+            }, {
+                name: "Embrace-it",
+                url: "#",
+                descriptions: [
+                    "Embrace-it har lang erfaring med detailhandelløsninger i Microsoft Dynamics NAV, og du får med os en dedikeret seniorkonsulent til dit projekt. Vi tilbyder dig altid en fast pris for dit projekt.",
+                    "Embrace-it bistår med integration, implementering og rådgivning, når din virksomhed skal opsætte Pakkelabels.dk i jeres ERP-system og Magento webshops."
+                ],
+                platforms: ["Microsoft Dynamics NAV", "Magento"]
+            }, {
+                name: "Indexed Webbureau",
+                url: "#",
+                descriptions: [
+                    "Indexed Webbureau kan hjælpe jeres virksomhed med opsætning af Pakkelabels.dk på PrestaShop og WooCommerce. Hvis disse ikke benyttes kan vi hjælpe med egen integration via Pakkelabels API.",
+                    "Indexed er leverandør inden for SaaS løsninger, hvor eksisterende platforme ikke slår til. Vi tilbyder også hjemmesider og webshops."
+                ],
+                platforms: ["SaaS", "WooCommerce", "PrestaShop"]
+            }, {
+                name: "Løverne",
+                url: "#",
+                descriptions: [
+                    "Løverne er et digitalt bureau, som specialiserer sig i udvikling af webshops og hjemmesider samt det at skabe digital vækst.",
+                    "Vi kan hjælpe dig med alt lige fra en standard opsætning af Pakkelabels.dk til en skræddersyet løsning heri, som virker 100% med din shop og netop dine mål."
+                ],
+                platforms: ["WooCommerce"]
+            }, {
+                name: "Grafikr",
+                url: "#",
+                descriptions: [
+                    "Grafikr er et webbureau i Randers, som er certificerde eksperter i Shopify. De har sin egen kontaktperson hos Shopify, hvilket betyder, at de altid sidder inde med den nyeste viden og kan hjælpe dig med opsætning af Pakkelabels.",
+                    "Webbureauet kan både lave standard løsninger, men også skræddersyede og unikke løsninger."
+                ],
+                platforms: ["Shopify", "WooCommerce"]
+            }
+
+            ] %}
+
+            {% for partner in partners %}
+            <div class="col-md-4">
+                <div class="card shadow-hover h-100">
+                    <div class="card-body regular d-flex flex-column justify-content-start">
+                        <a href="{{ partner.url }}">
+                            <img class="img-responsive" src="./public/{{ baseUrl.img }}/partners/{{ loop.index }}.png"
+                                alt="{{ partner.name }}" style="max-height: 50px;">
+
+                            <h5 class="card-title bold mt-5">{{ partner.name }}</h5>
+                        </a>
+
+                        <div class="text-secondary font-sm">
+                            {% for desc in partner.descriptions %}
+                            <p class="card-text">{{ desc }}</p>
+                            {% endfor %}
+                        </div>
+
+                        <div class="mt-auto">
+                            <hr class="mt-4">
+                            <p class="small text-primary bold my-0">Platforms</p>
+                            <ul class="list-unstyled d-flex flex-wrap flex-row align-items-center">
+                                {% for platform in partner.platforms %}
+                                <li><a href="#" class="badge badge-pill badge-outline-info mr-2">{{ platform }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+</section>

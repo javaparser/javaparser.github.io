@@ -1,0 +1,11 @@
+<!-- ./Counters -->
+<section class="{{ section.class }}">
+    <div class="container {{ section.container.class }}">
+        <div class="d-flex align-items-center">
+            <i data-feather="download-cloud" class="stroke-dark mr-3" width="48" height="48"></i>
+            <span class="counter font-lg bold text-dark">7,941,857</span>
+        </div>
+
+        <h2 class="font-md text-secondary">Successfully downloads, and counting ...</h2>
+    </div>
+</section>

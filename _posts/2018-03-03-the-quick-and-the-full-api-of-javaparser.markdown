@@ -15,26 +15,31 @@ Lost in a dark corner of the JavaParser site is the idea behind the two API's of
 
 This API was built to make common use cases as painless as possible. In the end, this API is a collection of shortcuts to the full API.
 
+```java
     import static com.github.javaparser.StaticJavaParser.*;
-    ...
+    // ...
     CompilationUnit cu = parse("class X{}");
+```
 
 *   The quick API consists of all the static methods on the `StaticJavaParser` class.
 *   All these methods throw an unchecked `ParseProblemException` if anything goes wrong. This exception contains a list of the problem(s) encountered.
 *   The static methods called `parse` and `parseResource` offer various ways of reading Java code for parsing. They all expect a full Java file. So, even though the example parses a `String`, you could pass an `InputStream`, a `File` or various other inputs.
 *   The remaining static methods parse a fragment of source code in a `String`. Here is one that parses just an expression:
-
+    ```java
     Expression e = parseExpression("1+1");
+    ```
 
 *   `parseJavadoc` is a special case. Comments normally remaing unparsed, including Javadoc comments. This method is a separate parser for a `JavadocComment` node.
 *   Changing configuration is done by modifying the `staticConfiguration` field.
-
+    ```java
     StaticJavaParser.getConfiguration().setAttributeComments(false);
+    ```
 
 ### Full!
 
 This API was built to give access to all flexibility there is, and to provide a little more performance.
 
+```java
     import static com.github.javaparser.ParseStart.*;
     import static com.github.javaparser.Providers.provider;
     ...
@@ -43,15 +48,18 @@ This API was built to give access to all flexibility there is, and to provide a 
     result.ifSuccessful(cu ->
         // use cu        
     );
+```
 
 or, thanks to the fake builder pattern:
 
+```java
     import static com.github.javaparser.ParseStart.*;
     import static com.github.javaparser.Providers.provider;
     ...
     new JavaParser().parse(COMPILATION_UNIT, provider("class X{}")).ifSuccessful(cu ->
             System.out.println(cu)        
     );
+```
 
 *   The full API consists of the `JavaParser` constructors, and the whole suite of parse methods, with one extra - the one that does the actual parsing work.
 *   _Never_ does it throw an exception. `ParseResult` can tell you if parsing went fine, and if not what problems were encountered.
@@ -63,7 +71,7 @@ or, thanks to the fake builder pattern:
 *   Parsing Javadoc is an exception again. You need the `JavadocParser` for that.
 *   Configuration can be passed in the constructor.
 
-   
+```java
     ParserConfiguration configuration = new ParserConfiguration();
     JavaParser parser = new JavaParser(configuration);
     ParseResult parseResult = parser.parse(EXPRESSION, provider("1+1"));
@@ -75,3 +83,4 @@ or, thanks to the fake builder pattern:
     if (parseResult.getCommentsCollection().isPresent()) {
         // ...
     }
+```

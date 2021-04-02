@@ -84,6 +84,15 @@ Some factors/functionality to be considered include:
 
 ## The "new" Release Process
 
+You can take a look at the diff within this PR where we got started with this:
+https://github.com/javaparser/javaparser/pull/3180/files
+
+_(note that it has changed somewhat since)_
+
+The issue:
+https://github.com/javaparser/javaparser/issues/3086
+
+
 ### Step 1: Update the project's POM
 
 This step is straightforward for an existing project - remove references to bintray, 
